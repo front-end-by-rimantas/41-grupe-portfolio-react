@@ -72,6 +72,7 @@ There is no tests for this project.
 
 ## 🎅 Authors
 
+Audrius: [Github](https://github.com/audrbar)
 Rimantas: [Github](https://github.com/belauzas)
 
 ## ⚠️ License
