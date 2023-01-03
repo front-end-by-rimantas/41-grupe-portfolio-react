@@ -72,7 +72,6 @@ There is no tests for this project.
 
 ## 🎅 Authors
 
-
 Audrius: [Github](https://github.com/audrbar)
 
 Inga: [Github](https://github.com/IngaGd) 
@@ -80,6 +79,10 @@ Inga: [Github](https://github.com/IngaGd)
 Jurgita: [Github](https://github.com/JurgitaE)
 
 Mindaugas [Github](https://github.com/Mindaugas-G)
+
+Modestas [Github](https://github.com/ModestasCi)
+
+Saulius: [Github](https://github.com/sgrazys)
 
 ## ⚠️ License
 
