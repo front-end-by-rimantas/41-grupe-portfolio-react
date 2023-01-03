@@ -76,6 +76,8 @@ Audrius: [Github](https://github.com/audrbar)
 
 Jurgita: [Github](https://github.com/JurgitaE)
 
+Mindaugas [Github](https://github.com/Mindaugas-G)
+
 Saulius: [Github](https://github.com/sgrazys)
 
 ## ⚠️ License
