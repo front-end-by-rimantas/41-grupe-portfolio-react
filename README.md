@@ -78,6 +78,8 @@ Jurgita: [Github](https://github.com/JurgitaE)
 
 Mindaugas [Github](https://github.com/Mindaugas-G)
 
+Modestas [Github](https://github.com/ModestasCi)
+
 Saulius: [Github](https://github.com/sgrazys)
 
 ## ⚠️ License
