@@ -1,0 +1,55 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family?*/
+}
+
+/* Bazinis antrastes stilius:
+
+.section-title {
+} 
+
+
+*/
+
+/* Bazinis apraso stilius:
+
+.section-description {
+}
+
+*/
+
+
+/* Bazinis paragrafo stilius:
+
+p {
+}
+
+*/
+
+
+/* Bazinis nuorodu stilius
+
+a {
+}
+
+*/
+
+
+/* Bazinis paragrafe esanciu nuorodu stilius
+
+p > a {
+}
+
+*/
