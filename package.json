@@ -1,7 +1,7 @@
 {
-  "name": "41-grupe-portfolio",
+  "name": "41-grupe-portfolio-react",
   "version": "1.0.0",
-  "description": "Demo portfolio project",
+  "description": "Demo sApp - React App Landing Page",
   "main": "index.js",
   "scripts": {
     "dev": "dead-server --port=4107 --host=localhost",
@@ -15,6 +15,26 @@
     "JS"
   ],
   "author": "Rimantas (https://github.com/belauzas)",
+  "contributors": [
+    {"name": "Audrius",
+    "url":  "https://github.com/audrbar"
+  },
+    {"name": "Inga",
+    "url": "https://github.com/IngaGd"
+  },
+    {"name": "Jurgita",
+    "url": "https://github.com/JurgitaE"
+  },
+    {"name": "Mindaugas",
+    "url": "https://github.com/Mindaugas-G"
+  },
+    {"name": "Modestas",
+    "url": "https://github.com/ModestasCi"
+  },
+    {"name": "Saulius",
+    "url": "https://github.com/sgrazys"
+  }
+],
   "license": "MIT",
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
