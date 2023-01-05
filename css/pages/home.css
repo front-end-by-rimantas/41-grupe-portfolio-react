@@ -2,7 +2,7 @@
 
 /* base:  */
 @import '../basic/base.css';
-/* layout.css */
+@import '../basic/layout.css';
 
 /* 3rs-party:  */
 @import '../3rd-party/font-awesome.min.css';
