@@ -8,10 +8,10 @@
 @import '../3rd-party/font-awesome.min.css';
 
 /* components (by alphabet):  */
-/* button.css */
-/* footer.css */
-/* form.css */
-/* header.css */
+@import '../components/button.css';
+@import '../components/footer.css';
+@import '../components/header.css';
+@import '../components/form.css';
 
 /* CUSTOM  */
 /* PASTABA: gali kartotis ir custom aprasai, geriau ju nekonfliktinti */
