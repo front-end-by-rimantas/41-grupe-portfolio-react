@@ -50,9 +50,8 @@ a {
 
 */
 
-/* Bazinis paragrafe esanciu nuorodu stilius
-
+/* Bazinis paragrafe esanciu nuorodu stilius */
 p > a {
+    text-decoration: underline;
+    color: #222;
 }
-
-*/
