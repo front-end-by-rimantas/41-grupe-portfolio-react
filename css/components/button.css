@@ -1,0 +1,7 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 24px;
+    color: #fff;
+    background: linear-gradient(-47deg, #8731e8 0%, #4528dc 100%);
+}
