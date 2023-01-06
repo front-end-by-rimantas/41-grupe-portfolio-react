@@ -14,14 +14,19 @@
     <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+    </style>
     <link rel="stylesheet" href="./css/pages/home.css">
 
 </head>
 
 <body>
     <!-- header NAV start -->
-    <header class="container">
+    <header class="container herro">
         <div class="row">
             <div class="col-12 col-md-6 col-xl-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cupiditate corrupti modi reprehenderit? Atque commodi deleniti consectetur ipsam eaque iusto ut dolores nesciunt eum sequi, assumenda veritatis pariatur dignissimos quae!
@@ -38,10 +43,28 @@
     <!-- hero start -->
     <section class="container">
         <div class="row">
-            CONTENT
-        </div>
-        <div class="row">
-            CONTENT
+            <div class="column left"></div>
+            <div class="column right">
+                <!-- form component start-->
+                <form action="/">
+                    <div>
+                        <label for="">Name</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Phone</label>
+                        <input type="text">
+                    </div>
+                </form>
+                <!-- form component end-->
+                <p class="section-description">
+                    By signing up, you accept our <a href="#">Terms</a> & <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
         </div>
     </section>
     <!-- hero end -->
@@ -65,6 +88,33 @@
     <!-- Reviews end -->
 
     <!-- Full Power start -->
+    <section class="container price-section">
+        <div class="row">
+            <div class="col-12 secondary-title center">
+                <h2 class="section-title">Unlock Full Power Of sApp</h2>
+                <div class="underline"></div>
+            </div>
+        </div>
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+            <div class="col-6 left-column">
+                BASIC
+                $49
+                5GB Linux Web Space
+                5 MySQL Databases
+                24/7 Tech Support
+                Daily Backups
+            </div>
+            <div class="col-6 left-right">
+                PRO
+                $149
+                10GB Linux Web Space
+                50 MySQL Databases
+                Unlimited Email
+                Daily Backups
+            </div>
+        </div>
+    </section>
     <!-- Full Power end -->
 
     <!-- FAQ start -->
