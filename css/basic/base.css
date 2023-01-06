@@ -1,3 +1,10 @@
+:root {
+    --main-color: #7c4fe0;
+    --secondary-background: #f6f9fe;
+    --gradient-1: #8731e8;
+    --gradient-2: #4528dc;
+    --primary-background: #fff;
+}
 html {
     scroll-behavior: smooth;
 }
