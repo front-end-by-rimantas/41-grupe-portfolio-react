@@ -40,6 +40,41 @@
 /* Reviews end */
 
 /* Full Power start */
+.price-section {
+    background-color: var(--secondary-background);
+}
+.price-section .text-description {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.price-section h2 {
+    text-align: center;
+}
+.container.price-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .price-section h2 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 576px) {
+    .price-section h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .price-section h2 {
+        font-size: 24px;
+    }
+}
 /* Full Power end */
 
 /* FAQ start */
