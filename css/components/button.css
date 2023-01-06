@@ -1,7 +1,14 @@
 .btn {
     display: inline-block;
     text-decoration: none;
-    margin-top: 24px;
-    color: #fff;
-    background: linear-gradient(-47deg, #8731e8 0%, #4528dc 100%);
+    color: var(--secondary-background);
+    font-weight: 500;
+    background: linear-gradient(
+        -50deg,
+        var(--gradient-1) 0%,
+        var(--gradient-2) 100%
+    );
+    padding: 15px 30px;
+    margin-top: 1.5em;
+    border-radius: 0.4em;
 }
