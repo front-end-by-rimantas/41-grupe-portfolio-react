@@ -11,9 +11,11 @@
 @import '../components/button.css';
 @import '../components/app-plan.css';
 /* footer.css */
-/* form.css */
+@import '../components/form.css';
 /* header.css */
-@import '../components/header-underline.css'; /* CUSTOM  */
+@import '../components/header-underline.css';
+
+/* CUSTOM  */
 /* PASTABA: gali kartotis ir custom aprasai, geriau ju nekonfliktinti */
 
 /* header NAV start */
