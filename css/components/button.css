@@ -1,0 +1,14 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary-background);
+    font-weight: 500;
+    background: linear-gradient(
+        -50deg,
+        var(--gradient-1) 0%,
+        var(--gradient-2) 100%
+    );
+    padding: 15px 30px;
+    margin-top: 1.5em;
+    border-radius: 0.4em;
+}
