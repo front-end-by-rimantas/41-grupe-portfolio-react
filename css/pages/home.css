@@ -12,8 +12,7 @@
 /* footer.css */
 /* form.css */
 /* header.css */
-
-/* CUSTOM  */
+@import '../components/header-underline.css'; /* CUSTOM  */
 /* PASTABA: gali kartotis ir custom aprasai, geriau ju nekonfliktinti */
 
 /* header NAV start */
