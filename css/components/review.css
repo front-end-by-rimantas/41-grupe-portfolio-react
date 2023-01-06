@@ -17,12 +17,16 @@ h3 {
 
 h5 {
     font-weight: 400;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
 }
 
-/* .rating-stars {
+.review .rating-stars .checked {
+    color: #f2a53b;
+}
 
-} */
+.review .rating-stars .fa-star-o {
+    color: #f2a53b;
+}
 
 .section-description {
     text-align: center;
@@ -35,10 +39,15 @@ h5 {
     gap: 0.5em;
 }
 
+.review .review-btns > .checked {
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 8px var(--main-color);
+}
+
 .btn-1,
 .btn-2,
 .btn-3 {
-    background-color: var(--main-color);
+    background-color: #e5e4e5;
     height: 10px;
     width: 10px;
     border-radius: 50%;
