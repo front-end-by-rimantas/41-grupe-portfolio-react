@@ -1,0 +1,12 @@
+.app-plans {
+    max-width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.app-plans * {
+    text-align: center;
+}
+.app-plans li {
+    list-style: none;
+}

@@ -9,6 +9,7 @@
 
 /* components (by alphabet):  */
 @import '../components/button.css';
+@import '../components/app-plan.css';
 /* footer.css */
 /* form.css */
 /* header.css */
@@ -55,19 +56,6 @@
 }
 .price-section h2 {
     text-align: center;
-}
-/* components */
-.app-plans {
-    max-width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.app-plans * {
-    text-align: center;
-}
-.app-plans li {
-    list-style: none;
 }
 
 @media (max-width: 1200px) {
