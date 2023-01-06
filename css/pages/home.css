@@ -43,25 +43,31 @@
 /* Reviews end */
 
 /* Full Power start */
-.price-section {
+.container.price-section.price-section {
     background-color: var(--secondary-background);
+    min-height: 95vh;
 }
+
 .container.price-section,
+.container.price-section > .container:first-child,
 .price-section .text-description {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.price-section .text-description {
+.container.price-section > .container:first-child {
     max-width: 35%;
+}
+.price-section .text-description {
+    max-width: 80%;
     text-align: center;
 }
 .price-section h2,
 .price-section p {
     text-align: center;
 }
-.app-plans {
-    max-width: 50%;
+.price-section .app-plans {
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;

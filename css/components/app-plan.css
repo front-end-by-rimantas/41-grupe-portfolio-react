@@ -1,7 +1,9 @@
 .app-plan-column {
+    font-size: 16px;
     position: relative;
     background-color: var(--primary-background);
-    padding: 30px 0;
+    border-radius: 1em;
+    padding: 1.9em 0;
     margin-bottom: 20px;
     text-align: center;
     display: flex;
@@ -10,14 +12,26 @@
     justify-content: center;
 }
 .app-plan-column img {
-    max-width: 100px;
-    padding: 10px;
+    max-width: 6.4em;
+    padding: 0.64em;
 }
-
+.plan-price {
+    position: relative;
+    font-size: 3.4em;
+    font-weight: 600;
+}
+.plan-price::before {
+    content: '$';
+    font-weight: 700;
+    position: absolute;
+    font-size: 0.7em;
+    transform: translate(-90%, 35%);
+    /* bottom: -10px; */
+}
 .app-plan-column li {
     list-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.64em;
+    padding-bottom: 0.64em;
 }
 .app-plan-column .btn {
     position: absolute;
