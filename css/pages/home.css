@@ -60,6 +60,12 @@
 .price-section p {
     text-align: center;
 }
+.app-plans {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 @media (max-width: 1200px) {
     .price-section h2 {
