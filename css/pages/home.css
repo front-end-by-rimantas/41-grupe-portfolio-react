@@ -22,6 +22,63 @@
 /* header NAV end */
 
 /* hero start */
+.hero > .row > .col-7 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero {
+    background-color: var(--main-color);
+}
+
+.main-title {
+    font-size: 3.6em;
+    line-height: 1.2;
+    color: var(--primary-background);
+}
+
+.description-left {
+    /*margin-top: 1.4em;*/
+    color: var(--primary-background);
+    line-height: 1.6;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 4px;
+    background-color: var(--primary-background);
+    gap: 20px;
+}
+
+.box-form > .section-title {
+    text-align: center;
+    font-size: 28px;
+}
+
+.box-form > .description-right-1 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    color: var(--font-color-fith);
+}
+
+.box-form > form {
+    width: 100%;
+}
+
+.box-form > .description-right-2 {
+    font-size: 13px;
+    text-align: center;
+}
+
+.box-form > h3 > span {
+    text-transform: uppercase;
+}
+
 /* hero end */
 
 /* Express Functionality start */
