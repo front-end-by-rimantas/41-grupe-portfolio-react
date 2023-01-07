@@ -108,25 +108,6 @@
     align-items: center;
 }
 
-@media (max-width: 1200px) {
-    .price-section h2 {
-        font-size: 36px;
-    }
-}
-
-@media (min-width: 576px) {
-    .price-section h2 {
-        font-size: 30px;
-    }
-}
-@media (max-width: 576px) {
-    .price-section h2 {
-        font-size: 24px;
-    }
-    .container.price-section .text-description {
-        min-width: 100%;
-    }
-}
 /* Full Power end */
 
 /* FAQ start */
