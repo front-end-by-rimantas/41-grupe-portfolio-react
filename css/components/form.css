@@ -23,7 +23,7 @@ form > div > textarea {
     padding: 25px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.5;
     color: var(--font-color-tertiary);
     background-color: var(--primary-background);
     border: none;
