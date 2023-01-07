@@ -41,35 +41,70 @@
     <!-- Main start -->
 
     <!-- hero start -->
-    <section class="container">
+    <section class="container hero">
+        <div class="row">NAVIGATION</div>
         <div class="row">
-            <div class="column left"></div>
-            <div class="column right">
-                <!-- form component start-->
-                <form action="/">
-                    <div>
-                        <label for="">Name</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="">Email</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="">Phone</label>
-                        <input type="text">
-                    </div>
-                </form>
-                <!-- form component end-->
-                <p class="section-description">
-                    By signing up, you accept our <a href="#">Terms</a> & <a href="#">Privacy Policy</a>.
-                </p>
+            <div class="col-7">
+                <h1 class="main-title">Stay connected with your customers</h1>
+                <p class="description-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
+                <a class="btn-hero" href="#">Start free trail</a>
+            </div>
+            <div class="col-5">
+                <div class="box-form">
+                    <h3 class="section-title">Get started for <span>free</span>!</h3>
+                    <p class="description-right-1">Fill all fields so we can get some info about you. We'll never send you spam</p>
+                    <!-- form component start-->
+                    <form action="/">
+                        <div class="cell-1">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" required placeholder="Name">
+                        </div>
+                        <div class="cell-1">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="Email">
+                        </div>
+                        <div class="cell-1">
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="tel" placeholder="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        </div>
+                        <div class="cell-1">
+                            <button class="btn-form">Send message</button>
+                        </div>
+                    </form>
+                    <!-- form component end-->
+                    <p class="description-right-2">
+                        By signing up, you accept our <a href="#">terms</a> & <a href="#">privacy policy</a>.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <!-- hero end -->
 
     <!-- Express Functionality start -->
+    <section class="container express-section">
+        <div class="row">
+            <div class="col-2 inactive-btn">
+                <i class="fa fa-lightbulb-o" aria-hidden="true">
+                </i>
+                <p class="bword-1">Premium</p>
+                <p class="bword-2">Features</p>
+            </div>
+        </div>
+
+        <div class="row text-description">
+            <div class="secondary-title left">
+                <h2 class="section-title">Express Functionality</h2>
+                <div class="underline"></div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="express">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+        </div>
+        <div class="row">
+            BOXES
+        </div>
+    </section>
     <!-- Express Functionality end -->
 
     <!-- Easily communicate start -->
@@ -111,31 +146,44 @@
 
     <!-- Full Power start -->
     <section class="container price-section">
-        <div class="row">
-            <div class="col-12 secondary-title center">
-                <h2 class="section-title">Unlock Full Power Of sApp</h2>
-                <div class="underline"></div>
+        <div class="container">
+
+            <div class="row text-description">
+                <div class="secondary-title center">
+                    <h2 class="section-title">Unlock Full Power Of sApp</h2>
+                    <div class="underline"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
             </div>
-        </div>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            <div class="col-6 left-column">
-                BASIC
-                $49
-                5GB Linux Web Space
-                5 MySQL Databases
-                24/7 Tech Support
-                Daily Backups
+            <div class="row app-plans">
+                <div class="col-xxl-6 basic app-plan-column">
+                    <img src="./img/sign-up/price_basic.png" alt="bicycle">
+                    <h3>Basic</h3>
+                    <p class="plan-price">49</p>
+                    <ul>
+                        <li>5GB Linux Web Space</li>
+                        <li>5 MySQL Databases</li>
+                        <li>24/7 Tech Support</li>
+                        <li>Daily Backups</li>
+                    </ul>
+                    <a href="#" class="btn">Sign up</a>
+                </div>
+                <div class="col-xxl-6 pro app-plan-column">
+                    <img src="./img/sign-up/price_premium.png" alt="vespa">
+                    <h3>Pro</h3>
+                    <p class="plan-price">149</p>
+                    <ul>
+                        <li> 10GB Linux Web Space</li>
+                        <li>50 MySQL Databases</li>
+                        <li>Unlimited Email</li>
+                        <li>Daily Backups</li>
+                    </ul>
+                    <a href="#" class="btn">Sign up</a>
+                </div>
             </div>
-            <div class="col-6 left-right">
-                PRO
-                $149
-                10GB Linux Web Space
-                50 MySQL Databases
-                Unlimited Email
-                Daily Backups
+            <div class="row text-description">
+                <p>Not sure what to choose? <a href="">Contact Us</a></p>
             </div>
-        </div>
     </section>
     <!-- Full Power end -->
 
