@@ -8,11 +8,14 @@
 @import '../3rd-party/font-awesome.min.css';
 
 /* components (by alphabet):  */
-/* button.css */
+@import '../components/button.css';
+@import '../components/app-plan.css';
 /* footer.css */
-/* form.css */
+@import '../components/form.css';
 /* header.css */
-@import '../components/header-underline.css'; /* CUSTOM  */
+@import '../components/header-underline.css';
+
+/* CUSTOM  */
 /* PASTABA: gali kartotis ir custom aprasai, geriau ju nekonfliktinti */
 
 /* header NAV start */
@@ -75,6 +78,42 @@
 /* Reviews end */
 
 /* Full Power start */
+.price-section {
+    background-color: var(--secondary-background);
+}
+.container.price-section,
+.price-section .text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-section .text-description {
+    max-width: 35%;
+    text-align: center;
+}
+.price-section h2 {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .price-section h2 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 576px) {
+    .price-section h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .price-section h2 {
+        font-size: 24px;
+    }
+    .container.price-section .text-description {
+        min-width: 100%;
+    }
+}
 /* Full Power end */
 
 /* FAQ start */

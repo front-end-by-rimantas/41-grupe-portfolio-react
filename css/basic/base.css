@@ -6,6 +6,7 @@
     --primary-background: #fff;
     --font-color-main: #222;
     --font-color-secondary: #565656;
+    --font-color-tertiary: #495057;
 }
 html {
     scroll-behavior: smooth;
@@ -68,5 +69,5 @@ a {
 /* Bazinis paragrafe esanciu nuorodu stilius */
 p > a {
     text-decoration: underline;
-    color: #222;
+    color: var(--font-color-main);
 }
