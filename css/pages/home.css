@@ -26,10 +26,22 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 7em;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.hero {
-    background-color: var(--main-color);
+.container.hero {
+    height: 100vh;
+    background: linear-gradient(
+        -50deg,
+        var(--gradient-1) 0%,
+        var(--gradient-2) 100%
+    );
+    /*background-image: url(../../img/hero/blog-4.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-title {
