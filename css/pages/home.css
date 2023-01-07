@@ -147,42 +147,35 @@
 /* Reviews end */
 
 /* Full Power start */
-.price-section {
+.container.price-section {
     background-color: var(--secondary-background);
+    min-height: 95vh;
+}
+.container.price-section * {
+    text-align: center;
 }
 .container.price-section,
-.price-section .text-description {
+.container.price-section > .container:first-child {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+.container.price-section > .container:first-child {
+    flex-direction: column;
+}
+.container.price-section > .container:first-child {
+    width: 800px;
+}
 .price-section .text-description {
-    max-width: 35%;
-    text-align: center;
+    max-width: 80%;
 }
-.price-section h2 {
-    text-align: center;
-}
-
-@media (max-width: 1200px) {
-    .price-section h2 {
-        font-size: 36px;
-    }
+.price-section .app-plans {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-@media (min-width: 576px) {
-    .price-section h2 {
-        font-size: 30px;
-    }
-}
-@media (max-width: 576px) {
-    .price-section h2 {
-        font-size: 24px;
-    }
-    .container.price-section .text-description {
-        min-width: 100%;
-    }
-}
 /* Full Power end */
 
 /* FAQ start */
