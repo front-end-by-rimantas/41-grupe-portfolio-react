@@ -49,14 +49,14 @@
 }
 
 .container.price-section,
-.container.price-section > .container:first-child,
-.price-section .text-description {
+.container.price-section > .container:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .container.price-section > .container:first-child {
-    max-width: 35%;
+    width: 800px;
 }
 .price-section .text-description {
     max-width: 80%;
