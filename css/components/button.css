@@ -29,9 +29,34 @@
     box-shadow: none;
     outline: none;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 .btn-form:hover {
     box-shadow: 0 20px 35px -25px var(--main-color);
+}
+
+.btn-hero {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    width: 210px;
+    border: none;
+    border-radius: 35px;
+    padding: 14px 20px;
+    background-color: var(--primary-background);
+    color: var(--font-color-fourth);
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.btn-hero:hover {
+    background: linear-gradient(
+        -50deg,
+        var(--gradient-1) 0%,
+        var(--gradient-2) 100%
+    );
+    color: var(--primary-background);
 }
