@@ -27,23 +27,7 @@
 /* Express Functionality start */
 .express-section {
     color: var(--primary-background);
-}
-
-.container > .row > .inactive-btn {
-    font-size: 14px;
-    font-weight: 500;
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
-    margin: 0;
-    border-radius: 25px 25px 25px 25px;
-    padding: 10px 0 10px 25px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    align-items: center;
-}
-
-.container > .row > .inactive-btn > .fa {
-    color: var(--main-color);
+    padding: 60px 0;
 }
 
 .container > .row > .inactive-btn > .bword-1 {
@@ -56,9 +40,45 @@
     font-weight: 500;
 }
 
-.container > .row > .express {
+.container > .p > .express {
     margin-top: -5px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.container > .row > .inactive-btn {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    margin: 0;
+    padding: 10px 164px 10px 31px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
+    align-items: center;
+}
+
+.container > .row > .box {
+    padding: 39px;
+    display: flex;
+    text-align: center;
+    border-radius: 20px;
+    margin: 25px 25px 0 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-background);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.icon {
+    width: 20%;
+    margin: 16px;
+}
+
+.container > .row > .box:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
 }
 /* Express Functionality end */
 
