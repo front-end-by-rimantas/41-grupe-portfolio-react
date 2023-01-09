@@ -184,8 +184,14 @@
 .container.communicate > .row > .column-right > .icons {
     display: flex;
     flex-direction: row;
-    height: 50px;
 }
+.container.communicate > .row > .column-right {
+    height: 500px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
 /* Easily communicate end */
 
 /* Make Your Device start */
