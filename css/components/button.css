@@ -40,10 +40,10 @@
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    width: 210px;
+    width: 180px;
     border: none;
     border-radius: 35px;
-    padding: 14px 20px;
+    padding: 10px;
     background-color: var(--primary-background);
     color: var(--font-color-fourth);
     letter-spacing: 0.8px;
