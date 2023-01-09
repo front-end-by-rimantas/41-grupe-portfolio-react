@@ -16,6 +16,9 @@
 /* header.css */
 @import '../components/header-underline.css';
 @import '../components/review.css';
+/* icons.css */
+@import '../components/icons.css';
+
 /* CUSTOM  */
 /* PASTABA: gali kartotis ir custom aprasai, geriau ju nekonfliktinti */
 
@@ -203,6 +206,20 @@
 /* Express Functionality end */
 
 /* Easily communicate start */
+.cell {
+    max-width: 100%;
+}
+.container.communicate > .row > .column-right > ul {
+    list-style: none;
+}
+.container.communicate > .row > .column-right > ul li:before {
+    content: '✓';
+}
+.container.communicate > .row > .column-right > .icons {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
 /* Easily communicate end */
 
 /* Make Your Device start */
