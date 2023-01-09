@@ -10,6 +10,7 @@
 /* components (by alphabet):  */
 @import '../components/button.css';
 @import '../components/app-plan.css';
+@import '../components/featured-box.css';
 /* footer.css */
 @import '../components/form.css';
 /* header.css */
@@ -27,22 +28,7 @@
 /* Express Functionality start */
 .express-section {
     color: var(--primary-background);
-    padding: 60px 0;
-}
-
-.container > .row > .inactive-btn > .bword-1 {
-    color: var(--main-color);
-    font-weight: 500;
-}
-
-.container > .row > .inactive-btn > .bword-2 {
-    color: var(--font-color-main);
-    font-weight: 500;
-}
-
-.container > .p > .express {
-    margin-top: -5px;
-    margin-bottom: 30px;
+    padding: 60px 15px;
 }
 
 .container > .row > .inactive-btn {
@@ -58,27 +44,24 @@
     align-items: center;
 }
 
-.container > .row > .box {
-    padding: 39px;
-    display: flex;
-    text-align: center;
-    border-radius: 20px;
-    margin: 25px 25px 0 0;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--primary-background);
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+.row > .inactive-btn > .fa {
+    color: var(--main-color);
+    margin: 0 4px 0 0;
+    font-weight: 500;
+}
+.row > .inactive-btn > .bword-1 {
+    color: var(--main-color);
+    font-weight: 500;
 }
 
-.icon {
-    width: 20%;
-    margin: 16px;
+.row > .inactive-btn > .bword-2 {
+    color: var(--font-color-main);
+    font-weight: 500;
 }
 
-.container > .row > .box:hover {
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
-    transform: translateY(-10px);
+.express-section > .text-description > p {
+    max-width: 50%;
+    margin: 8px 0 30px;
 }
 /* Express Functionality end */
 
