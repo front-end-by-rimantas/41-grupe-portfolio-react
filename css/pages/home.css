@@ -53,6 +53,7 @@
 .navbar > .nav-bar-links > a:hover {
     color: #d3d3d3;
 }
+
 /* header NAV end */
 
 /* hero start */
@@ -183,35 +184,58 @@
 /* Reviews end */
 
 /* Full Power start */
-.container.price-section {
+.price-section {
     background-color: var(--secondary-background);
     min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.container.price-section * {
+.price-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price-section,
+.price-section .row:first-child {
+    flex-direction: column;
+}
+.price-section .row:first-child {
+    margin-bottom: 50px;
+}
+
+.price-section h2 {
+    font-size: 24px;
+    color: var(--font-color-main);
+}
+.price-section * {
     text-align: center;
 }
-.container.price-section,
-.container.price-section > .container:first-child {
+
+.price-section .apps-cols {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container.price-section > .container:first-child {
-    flex-direction: column;
+.price-section p {
+    margin-top: 10px;
 }
-.container.price-section > .container:first-child {
-    width: 800px;
+.price-section p.contact,
+.price-section .contact a {
+    color: #212529;
+    font-weight: 500;
 }
-.price-section .text-description {
-    max-width: 80%;
+@media (min-width: 768px) {
+    .price-section .apps-cols {
+        flex-direction: row;
+    }
 }
-.price-section .app-plans {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+@media (min-width: 1400px) {
+    .row.apps-cols .apps {
+        width: 350px !important;
+    }
 }
-
 /* Full Power end */
 
 /* FAQ start */
