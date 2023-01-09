@@ -26,53 +26,126 @@
 
 <body>
     <!-- header NAV start -->
-    <header class="container herro">
-        <div class="row">
-            <div class="col-12 col-md-6 col-xl-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cupiditate corrupti modi reprehenderit? Atque commodi deleniti consectetur ipsam eaque iusto ut dolores nesciunt eum sequi, assumenda veritatis pariatur dignissimos quae!
-            </div>
-            <div class="col-12 col-lg-6 col-xxl-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cupiditate corrupti modi reprehenderit? Atque commodi deleniti consectetur ipsam eaque iusto ut dolores nesciunt eum sequi, assumenda veritatis pariatur dignissimos quae!
-            </div>
-        </div>
-    </header>
     <!-- header NAV end -->
 
     <!-- Main start -->
 
     <!-- hero start -->
-    <section class="container">
+    <section class="container hero">
+        <!-- NAV -->
         <div class="row">
-            <div class="column left"></div>
-            <div class="column right">
-                <!-- form component start-->
-                <form action="/">
-                    <div class="cell-1">
-                        <label for="name">Name</label>
-                        <input id="name" type="text" required placeholder="Name">
+            <div class="col-12 col-lg-12 col-md-12">
+                <div class="navbar">
+                    <div class="nav-bar-logo">
+                        <a href="/"><img class="navbar-logo-img" src="./img/logo/logo-white.png" alt="Logo"></a>
                     </div>
-                    <div class="cell-1">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" placeholder="Email">
-                    </div>
-                    <div class="cell-1">
-                        <label for="phone">Phone</label>
-                        <input id="phone" type="tel" placeholder="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                    </div>
-                    <div class="cell-1">
-                        <button>Send mesage</button>
-                    </div>
-                </form>
-                <!-- form component end-->
-                <p class="section-description">
-                    By signing up, you accept our <a href="#">Terms</a> & <a href="#">Privacy Policy</a>.
-                </p>
+                    <div class="nav-bar-links">
+                        <a href="#">Home</a>
+                        <a href="#">Features</a>
+                        <a href="#">Pages</a>
+                        <a href="#">Screenshots</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Contact</a>
+                    </div class="nav-list">
+                </div>
+            </div>
+        </div>
+        <!-- NAV -->
+        <div class="row">
+            <div class="col-12 col-lg-12 col-md-12 col-xl-7">
+                <h1 class="main-title">Stay connected with your customers</h1>
+                <p class="description-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
+                <a class="btn-hero" href="#">Start free trail</a>
+            </div>
+            <div class="col-12 col-lg-6 ml-lg-3 col-md-8 ml-md-2 col-xl-5">
+                <div class="box-form">
+                    <h3 class="section-title">Get started for <span>free</span>!</h3>
+                    <p class="description-right-1">Fill all fields so we can get some info about you. We'll never send you spam</p>
+                    <!-- form component start-->
+                    <form action="/">
+                        <div class="cell-1">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" required placeholder="Name">
+                        </div>
+                        <div class="cell-1">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="Email">
+                        </div>
+                        <div class="cell-1">
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="tel" placeholder="Phone" pattern="[0-9]{9}">
+                        </div>
+                        <div class="cell-1">
+                            <button class="btn-form">Send message</button>
+                        </div>
+                    </form>
+                    <!-- form component end-->
+                    <p class="description-right-2">
+                        By signing up, you accept our <a href="#">terms</a> & <a href="#">privacy policy</a>.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <!-- hero end -->
 
     <!-- Express Functionality start -->
+    <section class="container express-section">
+        <div class="row">
+            <div class="col-2 inactive-btn">
+                <i class="fa fa-lightbulb-o"></i>
+                <p class="bword-1">Premium</p>
+                <p class="bword-2">Features</p>
+            </div>
+        </div>
+
+        <div class="row text-description">
+            <div class="secondary-title left">
+                <h2 class="section-title">Express Functionality</h2>
+                <div class="underline"></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+        </div>
+
+        <div class="row feature-boxes">
+            <div class="col-12 col-md-6 col-lg-4 box">
+                <img src="img/premium-features/featured_image_1.png" alt="featured-icon-1" class="icon">
+                <h3>Fully functional</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 box">
+                <img src="img/premium-features/featured_image_2.png" alt="featured-icon-2" class="icon">
+                <h3>Live Chat</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 box">
+                <img src="img/premium-features/featured_image_3.png" alt="featured-icon-3" class="icon">
+                <h3>Secure Data</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 box">
+                <img src="img/premium-features/featured_image_4.png" alt="featured-icon-4" class="icon">
+                <h3>Easy to Customize</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 box">
+                <img src="img/premium-features/featured_image_5.png" alt="featured-icon-5" class="icon">
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 box">
+                <img src="img/premium-features/featured_image_6.png" alt="featured-icon-6" class="icon">
+                <h3>Help Documentation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- Express Functionality end -->
 
     <!-- Easily communicate start -->
@@ -113,21 +186,46 @@
     <!-- Simple & Beautiful end -->
 
     <!-- Reviews start -->
+    <section class="container review">
+        <div class="row">
+            <div class="col-12 review-content">
+                <img class="customer-photo" src="./img/experts/avatar-1.png" alt="Customer photo">
+                <h3>Jhon Doe</h3>
+                <h5>Los Angeles, California</h5>
+                <div class="rating-stars">
+                    <p class="fa fa-star checked"></p>
+                    <p class="fa fa-star checked"></p>
+                    <p class="fa fa-star checked"></p>
+                    <p class="fa fa-star checked"></p>
+                    <p class="fa fa-star-o"></p>
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt doloremque aspernatur exercitationem, atque molestias ipsam accusamus? Ea amet eum, inventore dolorum eius repellendus odit? Totam!
+                </p>
+                <div class="review-btns">
+                    <div class="btn-1 checked"></div>
+                    <div class="btn-2"></div>
+                    <div class="btn-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Reviews end -->
 
     <!-- Full Power start -->
+
     <section class="container price-section">
-        <div class="row text-description">
-            <div class="secondary-title center">
+        <div class="row">
+            <div class="secondary-title center col-12 col-md-10 col-xl-6">
                 <h2 class="section-title">Unlock Full Power Of sApp</h2>
                 <div class="underline"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+            <p class="col-12 col-md-10 col-xl-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
         </div>
-        <div class="row app-plans">
-            <div class="col-6 left-column">
-                BASIC
-                $49
+        <div class="row apps-cols">
+            <div class="apps col-12 col-sm-10  col-md-5 col-xl-4 col-xxl-3">
+                <img src="./img/sign-up/price_basic.png" alt="bicycle">
+                <h3>Basic</h3>
+                <p class="price">49</p>
                 <ul>
                     <li>5GB Linux Web Space</li>
                     <li>5 MySQL Databases</li>
@@ -136,9 +234,10 @@
                 </ul>
                 <a href="#" class="btn">Sign up</a>
             </div>
-            <div class="col-6 left-right">
-                PRO
-                $149
+            <div class="apps col-12 col-sm-10 col-md-5 col-xl-4 col-xxl-3">
+                <img src="./img/sign-up/price_premium.png" alt="vespa">
+                <h3>Pro</h3>
+                <p class="price">149</p>
                 <ul>
                     <li> 10GB Linux Web Space</li>
                     <li>50 MySQL Databases</li>
@@ -149,9 +248,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
-                <p>Not sure what to choose? Contact Us</p>
-            </div>
+            <p class="contact col-12 col-md-10 col-xl-6">Not sure what to choose? <a href="">Contact Us</a></p>
+        </div>
+        </div>
     </section>
     <!-- Full Power end -->
 

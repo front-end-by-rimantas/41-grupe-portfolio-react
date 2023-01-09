@@ -1,12 +1,64 @@
-.app-plans {
-    max-width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.apps {
+    position: relative;
+    background-color: var(--primary-background);
+    font-size: 16px;
+    padding: 30px 40px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.app-plans * {
-    text-align: center;
+.apps img {
+    width: 64px;
 }
-.app-plans li {
+.apps h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.apps p.price {
+    position: relative;
+    font-size: 2.8em;
+    color: var(--main-font);
+    font-weight: 600;
+    display: inline-block;
+}
+
+.apps p.price::before {
+    content: '$';
+    position: absolute;
+    font-size: 0.7em;
+    font-weight: 700;
+    bottom: 0.1em;
+    transform: translateX(-100%);
+}
+.apps li {
     list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 20px;
+
+    font-size: 14px;
+}
+
+@media (min-width: 576px) {
+    .apps img {
+        width: 80px;
+    }
+}
+@media (min-width: 768px) {
+    .apps .btn {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        transform: translate(-50%, 50%);
+    }
+}
+@media (min-width: 992) {
+    .row.apps-cols .apps {
+        width: 300px !important;
+    }
+}
+@media (min-width: 1400px) {
+    .row.apps-cols .apps {
+        width: 350px !important;
+    }
 }
