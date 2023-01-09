@@ -20,17 +20,6 @@
 /* PASTABA: gali kartotis ir custom aprasai, geriau ju nekonfliktinti */
 
 /* header NAV start */
-header.container {
-    background: linear-gradient(
-        -50deg,
-        var(--gradient-1) 0%,
-        var(--gradient-2) 100%
-    );
-    padding-top: var(--half-gap);
-    padding-bottom: var(--half-gap);
-    padding-left: 0px;
-    vertical-align: center;
-}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -39,6 +28,9 @@ header.container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+.navbar > .nav-bar-logo > a {
+    cursor: pointer;
 }
 .navbar > .nav-bar-links {
     display: flex;
