@@ -227,7 +227,11 @@
         flex-direction: row;
     }
 }
-
+@media (min-width: 1400px) {
+    .row.apps-cols .apps {
+        width: 350px !important;
+    }
+}
 /* Full Power end */
 
 /* FAQ start */
