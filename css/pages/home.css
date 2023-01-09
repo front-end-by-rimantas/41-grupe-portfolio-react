@@ -10,15 +10,59 @@
 /* components (by alphabet):  */
 @import '../components/button.css';
 @import '../components/app-plan.css';
+@import '../components/featured-box.css';
 /* footer.css */
 @import '../components/form.css';
 /* header.css */
 @import '../components/header-underline.css';
-
+@import '../components/review.css';
 /* CUSTOM  */
 /* PASTABA: gali kartotis ir custom aprasai, geriau ju nekonfliktinti */
 
 /* header NAV start */
+header.container {
+    background: linear-gradient(
+        -50deg,
+        var(--gradient-1) 0%,
+        var(--gradient-2) 100%
+    );
+    padding-top: var(--half-gap);
+    padding-bottom: var(--half-gap);
+    padding-left: 0px;
+    vertical-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar > .nav-bar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar > .nav-bar-links {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.navbar > .nav-bar-links > a {
+    margin: 0 22px;
+    cursor: pointer;
+    color: var(--primary-background);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+}
+.navbar > .nav-bar-links > a:hover {
+    color: #d3d3d3;
+}
+
+
 /* header NAV end */
 
 /* hero start */
@@ -96,6 +140,7 @@
 /* Express Functionality start */
 .express-section {
     color: var(--primary-background);
+    padding: 60px 15px;
 }
 
 .container > .row > .inactive-btn {
@@ -105,29 +150,30 @@
     flex-direction: row;
     gap: 3px;
     margin: 0;
+    padding: 10px 164px 10px 31px;
     border-radius: 25px 25px 25px 25px;
-    padding: 10px 0 10px 25px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
     align-items: center;
 }
 
-.container > .row > .inactive-btn > .fa {
+.row > .inactive-btn > .fa {
     color: var(--main-color);
+    margin: 0 4px 0 0;
+    font-weight: 500;
 }
-
-.container > .row > .inactive-btn > .bword-1 {
+.row > .inactive-btn > .bword-1 {
     color: var(--main-color);
     font-weight: 500;
 }
 
-.container > .row > .inactive-btn > .bword-2 {
+.row > .inactive-btn > .bword-2 {
     color: var(--font-color-main);
     font-weight: 500;
 }
 
-.container > .row > .express {
-    margin-top: -5px;
-    margin-bottom: 50px;
+.express-section > .text-description > p {
+    max-width: 50%;
+    margin: 8px 0 30px;
 }
 /* Express Functionality end */
 
