@@ -1,44 +1,24 @@
-.app-plan-column {
-    font-size: 16px;
-    position: relative;
+.apps {
     background-color: var(--primary-background);
+    font-size: 16px;
+    padding: 30px 50px;
+    margin-bottom: 20px;
     border-radius: 1em;
-    padding: 30px;
-    margin: 20px 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 15em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.app-plan-column * {
-    text-align: center;
+.apps img {
+    width: 64px;
 }
-.app-plan-column img {
-    max-width: 6.4em;
-    padding: 0.64em;
-}
-.plan-price {
-    position: relative;
-    font-size: 3.4em;
-    font-weight: 600;
-}
-.plan-price::before {
-    content: '$';
-    font-weight: 700;
-    position: absolute;
-    font-size: 0.7em;
-    transform: translate(-90%, 35%);
-}
-.app-plan-column li {
+.apps li {
     list-style: none;
-    padding-top: 0.64em;
-    padding-bottom: 0.64em;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
-.app-plan-column .btn {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    transform: translateY(50%);
+
+@media (min-width: 576px) {
+    .apps img {
+        width: 80px;
+    }
+}
+@media (min-width: 768px) {
 }
