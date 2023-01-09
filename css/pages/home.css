@@ -200,6 +200,10 @@
 .price-section .row:first-child {
     flex-direction: column;
 }
+.price-section .row:first-child {
+    margin-bottom: 50px;
+}
+
 .price-section h2 {
     font-size: 24px;
     color: var(--font-color-main);
