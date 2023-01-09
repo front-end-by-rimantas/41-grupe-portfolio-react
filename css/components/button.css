@@ -13,6 +13,10 @@
     border-radius: 0.4em;
 }
 
+.btn:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
 .btn-form {
     margin-top: 28px;
     display: inline-block;
