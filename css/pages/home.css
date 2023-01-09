@@ -19,6 +19,49 @@
 /* PASTABA: gali kartotis ir custom aprasai, geriau ju nekonfliktinti */
 
 /* header NAV start */
+header.container {
+    background: linear-gradient(
+        -50deg,
+        var(--gradient-1) 0%,
+        var(--gradient-2) 100%
+    );
+    padding-top: var(--half-gap);
+    padding-bottom: var(--half-gap);
+    padding-left: 0px;
+    vertical-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar > .nav-bar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar > .nav-bar-links {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.navbar > .nav-bar-links > a {
+    margin: 0 22px;
+    cursor: pointer;
+    color: var(--primary-background);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+}
+.navbar > .nav-bar-links > a:hover {
+    color: #d3d3d3;
+}
+
+
 /* header NAV end */
 
 /* hero start */
