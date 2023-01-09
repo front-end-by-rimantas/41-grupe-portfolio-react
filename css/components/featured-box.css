@@ -1,0 +1,22 @@
+.container > .row > .box,
+.container > .row > .box:hover {
+    padding: 39px;
+    display: flex;
+    text-align: center;
+    border-radius: 20px;
+    margin: 25px 25px 0 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-background);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.icon {
+    width: 20%;
+    margin: 16px;
+}
+
+.container > .row > .box:hover {
+    transform: translateY(-10px);
+}
