@@ -26,11 +26,9 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-}
-.navbar > .nav-bar-logo {
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
+    height: 80px;
+
 }
 .navbar > .nav-bar-logo > a {
     cursor: pointer;
@@ -38,8 +36,6 @@
 .navbar > .nav-bar-links {
     display: flex;
     flex-direction: row;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
     justify-content: center;
     align-items: center;
 }
@@ -56,12 +52,17 @@
 .navbar > .nav-bar-links > a:hover {
     color: #d3d3d3;
 }
+.navbar > .nav-bar-links > a:first-child::after,
+.navbar > .nav-bar-links > a:nth-child(3)::after {
+    display: inline-block;
+    content: '';
+    margin-left: 4px;
+    vertical-align: 1px;
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
 .navbar-toggler {
-    position: absolute !important;
-    top: auto;
-    right: calc(var(--gap) * 4);
-    bottom: auto;
-    left: auto;
     border: none;
     border-radius: 0;
     background: none;
@@ -72,24 +73,17 @@
     width: 33px;
     height: 3px;
     margin-bottom: 7px;
-    position: relative;
     background: var(--primary-background);
     z-index: 1;
-    transform-origin: 4px 0px;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
 }
 .navbar-toggler > input {
     display: block;
-    width: 40px;
-    height: 32px;
+    width: 33px;
+    height: 30px;
     position: absolute;
-    top: -7px;
-    left: -5px;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
-    -webkit-touch-callout: none;
 }
 /* header NAV end */
 
