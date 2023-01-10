@@ -2,7 +2,7 @@
     position: relative;
     background-color: var(--primary-background);
     font-size: 16px;
-    padding: 30px 40px;
+    padding: 30px 45px;
     padding-bottom: 60px;
     margin-bottom: 20px;
     border-radius: 1em;
@@ -18,7 +18,7 @@
 .apps p.price {
     position: relative;
     font-size: 2.8em;
-    color: var(--main-font);
+    color: var(--font-color-main);
     font-weight: 600;
     display: inline-block;
 }
@@ -27,6 +27,7 @@
     content: '$';
     position: absolute;
     font-size: 0.7em;
+    color: #222;
     font-weight: 700;
     bottom: 0.1em;
     transform: translateX(-100%);
@@ -34,14 +35,19 @@
 .apps li {
     list-style: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 20px;
-
+    padding: 20px 0;
     font-size: 14px;
+}
+.apps li:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 576px) {
     .apps img {
         width: 80px;
+    }
+    .apps p.price {
+        font-size: 3.5em;
     }
 }
 @media (min-width: 768px) {
@@ -51,8 +57,11 @@
         margin: 0;
         transform: translate(-50%, 50%);
     }
+    .apps p.price {
+        font-size: 2.6em;
+    }
 }
-@media (min-width: 992) {
+@media (min-width: 992px) {
     .row.apps-cols .apps {
         width: 320px !important;
     }
