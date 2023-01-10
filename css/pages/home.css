@@ -16,6 +16,9 @@
 /* header.css */
 @import '../components/header-underline.css';
 @import '../components/review.css';
+/* icons.css */
+@import '../components/icons.css';
+
 /* CUSTOM  */
 /* PASTABA: gali kartotis ir custom aprasai, geriau ju nekonfliktinti */
 
@@ -57,15 +60,6 @@
 /* header NAV end */
 
 /* hero start */
-/*
-.hero > .row > .col-7 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 7em;
-    align-items: flex-start;
-    justify-content: center;
-}*/
 
 .container.hero {
     height: 100vh;
@@ -87,7 +81,6 @@
 }
 
 .description-left {
-    /*margin-top: 1.4em;*/
     color: var(--primary-background);
     line-height: 1.6;
 }
@@ -203,6 +196,20 @@
 /* Express Functionality end */
 
 /* Easily communicate start */
+.cell {
+    max-width: 100%;
+}
+.container.communicate > .row > .column-right > ul {
+    list-style: none;
+}
+.container.communicate > .row > .column-right > ul li:before {
+    content: '✓';
+}
+.container.communicate > .row > .column-right > .icons {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
 /* Easily communicate end */
 
 /* Make Your Device start */
@@ -265,11 +272,7 @@
         flex-direction: row;
     }
 }
-@media (min-width: 1400px) {
-    .row.apps-cols .apps {
-        width: 350px !important;
-    }
-}
+
 /* Full Power end */
 
 /* FAQ start */

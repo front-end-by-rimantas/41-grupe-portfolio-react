@@ -54,10 +54,10 @@
 }
 @media (min-width: 992) {
     .row.apps-cols .apps {
-        width: 300px !important;
+        width: 320px !important;
     }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .row.apps-cols .apps {
         width: 350px !important;
     }
