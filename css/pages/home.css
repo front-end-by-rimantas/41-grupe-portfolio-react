@@ -76,8 +76,8 @@
     background: var(--primary-background);
     z-index: 1;
     transform-origin: 4px 0px;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .navbar-toggler > input {
     display: block;
@@ -281,7 +281,7 @@
 }
 
 .price-section h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--font-color-main);
 }
 .price-section * {
@@ -297,14 +297,31 @@
 .price-section p {
     margin-top: 10px;
 }
+.price-section p.contact {
+    margin-top: 2rem;
+}
 .price-section p.contact,
 .price-section .contact a {
     color: #212529;
     font-weight: 500;
 }
+@media (min-width: 576px) {
+    .price-section h2 {
+        font-size: 1.9rem;
+    }
+}
+
 @media (min-width: 768px) {
+    .price-section h2 {
+        font-size: 2.25rem;
+    }
     .price-section .apps-cols {
         flex-direction: row;
+    }
+}
+@media (min-width: 992px) {
+    .price-section h2 {
+        font-size: 2.5rem;
     }
 }
 

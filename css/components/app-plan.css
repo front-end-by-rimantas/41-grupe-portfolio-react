@@ -2,11 +2,13 @@
     position: relative;
     background-color: var(--primary-background);
     font-size: 16px;
-    padding: 30px 40px;
-    padding-bottom: 60px;
-    margin-bottom: 20px;
+    padding: 1.9em 2.8em;
+    padding-bottom: 3.75em;
+    margin-bottom: 1.25emx;
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    margin-top: 1.8em;
 }
 .apps img {
     width: 64px;
@@ -14,19 +16,23 @@
 .apps h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
+    opacity: 0.8;
 }
 .apps p.price {
     position: relative;
     font-size: 2.8em;
-    color: var(--main-font);
+    color: var(--font-color-main);
     font-weight: 600;
     display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0.1em;
 }
 
 .apps p.price::before {
     content: '$';
     position: absolute;
     font-size: 0.7em;
+    color: #222;
     font-weight: 700;
     bottom: 0.1em;
     transform: translateX(-100%);
@@ -34,14 +40,20 @@
 .apps li {
     list-style: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 20px;
-
-    font-size: 14px;
+    padding: 1.25em 0;
+    font-size: 0.875em;
+    color: var(--font-color-secondary);
+}
+.apps li:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 576px) {
     .apps img {
         width: 80px;
+    }
+    .apps p.price {
+        font-size: 3.5em;
     }
 }
 @media (min-width: 768px) {
@@ -51,10 +63,16 @@
         margin: 0;
         transform: translate(-50%, 50%);
     }
+    .apps p.price {
+        font-size: 2.6em;
+    }
 }
-@media (min-width: 992) {
+@media (min-width: 992px) {
     .row.apps-cols .apps {
         width: 320px !important;
+    }
+    .apps p.price {
+        font-size: 3.5em;
     }
 }
 @media (min-width: 1200px) {
