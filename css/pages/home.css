@@ -297,6 +297,9 @@
 .price-section p {
     margin-top: 10px;
 }
+.price-section p.contact {
+    margin-top: 2rem;
+}
 .price-section p.contact,
 .price-section .contact a {
     color: #212529;
