@@ -277,7 +277,7 @@
     flex-direction: column;
 }
 .price-section .row:first-child {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .price-section h2 {
@@ -317,6 +317,9 @@
     }
     .price-section .apps-cols {
         flex-direction: row;
+    }
+    .price-section .row:first-child {
+        margin-bottom: 50px;
     }
 }
 @media (min-width: 992px) {
