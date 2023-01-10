@@ -2,9 +2,9 @@
     position: relative;
     background-color: var(--primary-background);
     font-size: 16px;
-    padding: 30px 45px;
-    padding-bottom: 60px;
-    margin-bottom: 20px;
+    padding: 1.9em 2.8em;
+    padding-bottom: 3.75em;
+    margin-bottom: 1.25emx;
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -14,6 +14,7 @@
 .apps h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
+    opacity: 0.8;
 }
 .apps p.price {
     position: relative;
@@ -21,6 +22,8 @@
     color: var(--font-color-main);
     font-weight: 600;
     display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0.1em;
 }
 
 .apps p.price::before {
@@ -35,8 +38,9 @@
 .apps li {
     list-style: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 20px 0;
-    font-size: 14px;
+    padding: 1.25em 0;
+    font-size: 0.875em;
+    color: var(--font-color-secondary);
 }
 .apps li:first-child {
     border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -64,6 +68,9 @@
 @media (min-width: 992px) {
     .row.apps-cols .apps {
         width: 320px !important;
+    }
+    .apps p.price {
+        font-size: 3.5em;
     }
 }
 @media (min-width: 1200px) {
