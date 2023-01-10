@@ -177,9 +177,14 @@
 }
 .container.communicate > .row > .column-right > ul {
     list-style: none;
-}
-.container.communicate > .row > .column-right > ul li:before {
-    content: '✓';
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--font-color-secondary);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 200px;
 }
 .container.communicate > .row > .column-right > .icons {
     display: flex;
@@ -191,7 +196,12 @@
     gap: 25px;
     flex-direction: column;
 }
-
+.container.communicate > .row > .column-right > ul > li > i {
+    line-height: inherit;
+    color: var(--main-color);
+    font-size: inherit;
+    margin-right: 10px;
+}
 /* Easily communicate end */
 
 /* Make Your Device start */
