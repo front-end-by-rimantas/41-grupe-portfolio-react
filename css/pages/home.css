@@ -193,16 +193,16 @@
 /* Express Functionality start */
 .express-section {
     color: var(--primary-background);
-    padding: 60px 15px;
 }
 
 .container > .row > .inactive-btn {
     font-size: 14px;
     font-weight: 500;
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
     gap: 3px;
-    margin: 0;
+    margin: 0 0 0 15px;
     padding: 10px 164px 10px 31px;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 1px 5px 5px #0003;
@@ -223,11 +223,36 @@
     color: var(--font-color-main);
     font-weight: 500;
 }
-
-.express-section > .text-description > p {
+/* .express-section .row {
+    display: flex;
+    align-items: left;
+    justify-content:left;
+} */
+/* 
+.express-section > .row > .text-description > p {
     max-width: 50%;
-    margin: 8px 0 30px;
+    margin: 8px 0 30px 15px;
+} */
+
+/* @media (min-width: 576px) {
+    .express-section > .row > .text-description > p {
+        max-width: fit-content;
+        margin: 0 15px;
+    }
 }
+
+@media (min-width: 768px) {
+    .express-section > .row > .text-description > p {
+        max-width: fit-content;
+        margin: 0 15px;
+    }
+}
+@media (min-width: 992px) {
+    .express-section > .row > .text-description > p {
+        max-width: 80%;
+        margin: 0 15px;
+    }
+} */
 /* Express Functionality end */
 
 /* Easily communicate start */
