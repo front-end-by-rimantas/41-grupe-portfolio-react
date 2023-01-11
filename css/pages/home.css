@@ -327,7 +327,24 @@
 .app-work-section .icon {
     width: 64px;
 }
-
+.app-work-section .box {
+    position: relative;
+}
+.app-work-section .box + .box::before {
+    content: '>';
+    font-weight: ;
+    position: absolute;
+    color: var(--primary-background);
+    font-size: 80px;
+    bottom: 50%;
+    left: 0;
+    transform: translate(-50%, 50%);
+}
+@media (max-width: 768px) {
+    .app-work-section .box + .box::before {
+        display: none;
+    }
+}
 /* How sApp works end */
 
 /* Simple & Beautiful start */
