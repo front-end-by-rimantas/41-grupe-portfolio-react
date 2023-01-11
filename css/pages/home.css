@@ -278,6 +278,20 @@
 /* Make Your Device end */
 
 /* How sApp works start */
+.app-work-section {
+    background: linear-gradient(
+        -50deg,
+        var(--gradient-1) 0%,
+        var(--gradient-2) 100%
+    );
+}
+.app-work-section * {
+    color: var(--primary-background);
+}
+.app-work-section .row .box {
+    background: none;
+    box-shadow: none;
+}
 /* How sApp works end */
 
 /* Simple & Beautiful start */
