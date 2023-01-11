@@ -261,14 +261,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 200px;
 }
 .container.communicate > .row > .column-right > .icons {
     display: flex;
     flex-direction: row;
 }
 .container.communicate > .row > .column-right {
-    height: 450px;
     display: flex;
     gap: 25px;
     flex-direction: column;
