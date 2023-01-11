@@ -324,6 +324,9 @@
     box-shadow: none;
     transform: translateY(0);
 }
+.app-work-section .icon {
+    width: 64px;
+}
 
 /* How sApp works end */
 
