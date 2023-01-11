@@ -91,12 +91,12 @@
 .container.hero {
     padding-top: 0;
     min-height: 100vh;
-    background: linear-gradient(
-        -50deg,
-        var(--gradient-1) 0%,
-        var(--gradient-2) 100%
-    );
-    /*background-image: url(../../img/hero/blog-4.jpg);*/
+    background-image: linear-gradient(
+            -47deg,
+            rgba(135, 49, 232, 0.92) 0%,
+            rgba(69, 40, 220, 0.92) 100%
+        ),
+        url(../../img/hero/blog-4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
