@@ -91,12 +91,12 @@
 .container.hero {
     padding-top: 0;
     min-height: 100vh;
-    background: linear-gradient(
-        -50deg,
-        var(--gradient-1) 0%,
-        var(--gradient-2) 100%
-    );
-    /*background-image: url(../../img/hero/blog-4.jpg);*/
+    background-image: linear-gradient(
+            -47deg,
+            rgba(135, 49, 232, 0.92) 0%,
+            rgba(69, 40, 220, 0.92) 100%
+        ),
+        url(../../img/hero/blog-4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -197,6 +197,11 @@
     color: var(--primary-background);
 }
 
+.express-section h2 {
+    font-size: 1.5rem;
+    color: var(--font-color-main);
+}
+
 .container > .row > .inactive-btn {
     font-size: 14px;
     font-weight: 500;
@@ -225,36 +230,22 @@
     color: var(--font-color-main);
     font-weight: 500;
 }
-/* .express-section .row {
-    display: flex;
-    align-items: left;
-    justify-content:left;
-} */
-/* 
-.express-section > .row > .text-description > p {
-    max-width: 50%;
-    margin: 8px 0 30px 15px;
-} */
-
-/* @media (min-width: 576px) {
-    .express-section > .row > .text-description > p {
-        max-width: fit-content;
-        margin: 0 15px;
+@media (min-width: 576px) {
+    .express-section h2 {
+        font-size: 1.9rem;
     }
 }
 
 @media (min-width: 768px) {
-    .express-section > .row > .text-description > p {
-        max-width: fit-content;
-        margin: 0 15px;
+    .express-section h2 {
+        font-size: 2.25rem;
     }
 }
 @media (min-width: 992px) {
-    .express-section > .row > .text-description > p {
-        max-width: 80%;
-        margin: 0 15px;
+    .express-section h2 {
+        font-size: 2.5rem;
     }
-} */
+}
 /* Express Functionality end */
 
 /* Easily communicate start */
@@ -270,14 +261,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 200px;
 }
 .container.communicate > .row > .column-right > .icons {
     display: flex;
     flex-direction: row;
 }
 .container.communicate > .row > .column-right {
-    height: 450px;
     display: flex;
     gap: 25px;
     flex-direction: column;
