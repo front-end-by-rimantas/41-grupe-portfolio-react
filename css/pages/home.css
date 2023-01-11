@@ -311,6 +311,11 @@
     flex-direction: column;
     text-align: center;
 }
+.app-work-section .section-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
 .app-work-section .row:first-child {
     display: flex;
     justify-content: center;
@@ -318,33 +323,47 @@
 .app-work-section * {
     color: var(--primary-background);
 }
-.app-work-section .row .box,
-.app-work-section .row .box:hover {
-    background: none;
-    box-shadow: none;
-    transform: translateY(0);
+
+.app-work-section .work {
+    position: relative;
+    padding: 1.5em;
 }
 .app-work-section .icon {
     width: 64px;
 }
-.app-work-section .box {
-    position: relative;
+@media (min-width: 576px) {
+    .app-work-section .section-title {
+        font-size: 1.9rem;
+    }
 }
-.app-work-section .box + .box::before {
-    content: '>';
-    font-weight: ;
-    position: absolute;
-    color: var(--primary-background);
-    font-size: 80px;
-    bottom: 50%;
-    left: 0;
-    transform: translate(-50%, 50%);
-}
-@media (max-width: 768px) {
-    .app-work-section .box + .box::before {
+@media (min-width: 768px) {
+    .app-work-section .section-title {
+        font-size: 2.25rem;
+    }
+    .app-work-section .work::after {
+        content: '>';
+        font-weight: 500;
+        position: absolute;
+        color: var(--primary-background);
+        font-size: 60px;
+        bottom: 50%;
+        right: 0;
+        transform: translate(100%, 50%);
+        transition: 0.2s;
+    }
+    .app-work-section .work:hover::after {
+        transform: translate(120%, 50%);
+    }
+    .app-work-section .work:last-child:after {
         display: none;
     }
 }
+@media (min-width: 992px) {
+    .app-work-section .section-title {
+        font-size: 2.5rem;
+    }
+}
+
 /* How sApp works end */
 
 /* Simple & Beautiful start */
