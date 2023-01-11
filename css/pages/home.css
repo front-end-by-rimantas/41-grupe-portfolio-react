@@ -191,16 +191,23 @@
     flex-direction: row;
 }
 .container.communicate > .row > .column-right {
-    height: 500px;
+    height: 450px;
     display: flex;
     gap: 25px;
     flex-direction: column;
 }
-.container.communicate > .row > .column-right > ul > li > i {
-    line-height: inherit;
+.container.container.communicate > .row > .column-right > ul {
+    margin-left: 15px;
+}
+.container.container.communicate > .row > .column-right > ul li:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    margin: 0 5px 0 -15px;
     color: var(--main-color);
-    font-size: inherit;
-    margin-right: 10px;
+}
+.container.communicate > .row > .column-right > h2 {
+    font-size: 40px;
+    line-height: 1.3em;
 }
 /* Easily communicate end */
 
