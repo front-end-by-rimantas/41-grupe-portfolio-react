@@ -34,25 +34,53 @@
     <section class="container hero">
         <!-- NAV -->
         <div class="row">
-            <div class="col-12 col-lg-12 col-md-12">
-                <div class="navbar">
-                    <div class="nav-bar-logo">
-                        <a href="/"><img class="navbar-logo-img" src="./img/logo/logo-white.png" alt="Logo"></a>
+            <div class="navbar col-12">
+                <a href="/"><img class="navbar-logo-img" src="./img/logo/logo-white.png" alt="Logo"></a>
+                <button class="navbar-toggler hidden-lg">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+<!-- NAV MAIN-->
+                <div class="nav-bar-main hidden visible-lg-flex">
+                    <div class="nav-item">
+                        <a class="nav-link">Home<i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-item">
+                            <a class="dropdown-link" href="/">Homepage-1</a>
+                            <a class="dropdown-link" href="/">Homepage-2</a>
+                            <a class="dropdown-link" href="/">Homepage-3</a>
+                            <a class="dropdown-link" href="/">Homepage-4</a>
+                            <a class="dropdown-link" href="/">Homepage-5</a>
+                            <a class="dropdown-link" href="/">Homepage-6</a>
+
+                        </div>
                     </div>
-                    <button class="navbar-toggler hidden-lg">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <div class="nav-bar-links hidden visible-lg">
-                        <a href="#">Home</a>
-                        <a href="#">Features</a>
-                        <a href="#">Pages</a>
-                        <a href="#">Screenshots</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Contact</a>
-                    </div class="nav-list">
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">Pages<i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-item">
+                            <a class="dropdown-link" href="/">Inner Pages</a>
+                            <a class="dropdown-link" href="/">Blog Pages</a>
+                            <a class="dropdown-link" href="/">Blog Details</a>
+                            <a class="dropdown-link" href="/">Acounts</a>
+                            <a class="dropdown-link" href="/">Reviews</a>
+                            <a class="dropdown-link" href="/">FAQ</a>
+                            <a class="dropdown-link" href="/">Contact</a>
+                            <a class="dropdown-link" href="/">More Coming Soon</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">Screenshots</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,48 +133,48 @@
             </div>
         </div>
 
-        <div class="row text-description">
-            <div class="secondary-title left">
+        <div class="row">
+            <div class="secondary-title left col-12 col-md-10 col-lg-8 col-xl-6">
                 <h2 class="section-title">Express Functionality</h2>
                 <div class="underline"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
         </div>
 
         <div class="row feature-boxes">
             <div class="col-12 col-md-6 col-lg-4 box">
                 <img src="img/premium-features/featured_image_1.png" alt="featured-icon-1" class="icon">
-                <h3>Fully functional</h3>
+                <h3 class="box-header">Fully functional</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
                 </p>
             </div>
             <div class="col-12 col-md-6 col-lg-4 box">
                 <img src="img/premium-features/featured_image_2.png" alt="featured-icon-2" class="icon">
-                <h3>Live Chat</h3>
+                <h3 class="box-header">Live Chat</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
                 </p>
             </div>
             <div class="col-12 col-md-6 col-lg-4 box">
                 <img src="img/premium-features/featured_image_3.png" alt="featured-icon-3" class="icon">
-                <h3>Secure Data</h3>
+                <h3 class="box-header">Secure Data</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
                 </p>
             </div>
             <div class="col-12 col-md-6 col-lg-4 box">
                 <img src="img/premium-features/featured_image_4.png" alt="featured-icon-4" class="icon">
-                <h3>Easy to Customize</h3>
+                <h3 class="box-header">Easy to Customize</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
                 </p>
             </div>
             <div class="col-12 col-md-6 col-lg-4 box">
                 <img src="img/premium-features/featured_image_5.png" alt="featured-icon-5" class="icon">
-                <h3>Responsive Design</h3>
+                <h3 class="box-header">Responsive Design</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
                 </p>
             </div>
             <div class="col-12 col-md-6 col-lg-4 box">
                 <img src="img/premium-features/featured_image_6.png" alt="featured-icon-6" class="icon">
-                <h3>Help Documentation</h3>
+                <h3 class="box-header">Help Documentation</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
                 </p>
             </div>
@@ -156,10 +184,9 @@
 
     <!-- Easily communicate start -->
     <section class="container communicate" style="background-color: #f6f9fe;">
-
         <div class=" row">
-            <div class="column-left col-6"><img class="cell" src="/img/discover_thumb.png" alt=""></div>
-            <div class="column-right col-6">
+            <div class="column-left col-12 col-lg-6 "><img class="cell" src="./img/discover_thumb.png" alt=""></div>
+            <div class="column-right col-12 col-lg-6 ">
                 <h2>Easily communicate with clients using sApp.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolor ut iusto vitae autem neque eum ipsam, impedit asperiores vel cumque laborum dicta repellendus inventore voluptatibus et explicabo nobis unde.</p>
                 <ul>
@@ -172,20 +199,71 @@
                     <div><a href="#" class="fa fa-bell" aria-hidden="true"></a></div>
                     <div><a href="#" class="fa fa-envelope-open" aria-hidden="true"></a></div>
                     <div><a href="#" class="fa fa-video-camera" aria-hidden="true"></a></div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
     <!-- Easily communicate end -->
 
     <!-- Make Your Device start -->
+    <section class="container manage-section">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="secondary-title left col-12 col-md-10 col-lg-8 col-xl-6">
+                    <h2>
+                        Make Your Device Manage Everything For You
+                    </h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, qui. Illo eaque tempora esse architecto!</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, architecto! Corrupti cumque aperiam accusantium unde?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas voluptatem temporibus labore aspernatur animi.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, qui eligendi? Totam deserunt tempora animi?</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+            </div>
+
+            <div class=" col 12 col-md-6">
+                <img src="./img/features_thumb.png" alt="features_thumb_image" class="image">
+            </div>
+        </div>
+    </section>
     <!-- Make Your Device end -->
 
     <!-- How sApp works start -->
+    <section class="container app-work-section">
+        <div class="row ">
+            <div class="col-12 col-lg-6 col-xl-6">
+                <h2 class="section-title">How sApp works?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+
+            </div>
+        </div>
+        <div class="row works-contain">
+            <div class="col-12 col-md-4 work">
+                <img src="img/app-work/work_thumb_1.png" alt="cloud" class="icon">
+                <h3 class="work-header first">Install the App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?
+                </p>
+            </div>
+            <div class="col-12 col-md-4  work">
+                <img src="img/app-work/work_thumb_2.png" alt="profile" class="icon">
+                <h3 class="work-header">Setup your profile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?
+                </p>
+            </div>
+            <div class="col-12 col-md-4 work">
+                <img src="img/app-work/work_thumb_3.png" alt="settings" class="icon">
+                <h3 class="work-header">Enjoy the features!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- How sApp works end -->
 
     <!-- Simple & Beautiful start -->
@@ -218,7 +296,6 @@
     <!-- Reviews end -->
 
     <!-- Full Power start -->
-
     <section class="container price-section">
         <div class="row">
             <div class="secondary-title center col-12 col-md-10 col-lg-8 col-xl-6">
