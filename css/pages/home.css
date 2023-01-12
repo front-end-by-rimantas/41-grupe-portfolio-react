@@ -171,12 +171,12 @@
 .container.hero {
     padding-top: 0;
     min-height: 100vh;
-    background: linear-gradient(
-        -50deg,
-        var(--gradient-1) 0%,
-        var(--gradient-2) 100%
-    );
-    /*background-image: url(../../img/hero/blog-4.jpg);*/
+    background-image: linear-gradient(
+            -47deg,
+            rgba(135, 49, 232, 0.92) 0%,
+            rgba(69, 40, 220, 0.92) 100%
+        ),
+        url(../../img/hero/blog-4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -208,8 +208,7 @@
 }
 
 .container > .row.hero > .box-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    margin: 0 auto;
 }
 
 .box-container > .box-form {
@@ -276,16 +275,21 @@
 /* Express Functionality start */
 .express-section {
     color: var(--primary-background);
-    padding: 60px 15px;
+}
+
+.express-section h2 {
+    font-size: 1.5rem;
+    color: var(--font-color-main);
 }
 
 .container > .row > .inactive-btn {
     font-size: 14px;
     font-weight: 500;
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
     gap: 3px;
-    margin: 0;
+    margin: 0 0 0 15px;
     padding: 10px 164px 10px 31px;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 1px 5px 5px #0003;
@@ -306,10 +310,21 @@
     color: var(--font-color-main);
     font-weight: 500;
 }
+@media (min-width: 576px) {
+    .express-section h2 {
+        font-size: 1.9rem;
+    }
+}
 
-.express-section > .text-description > p {
-    max-width: 50%;
-    margin: 8px 0 30px;
+@media (min-width: 768px) {
+    .express-section h2 {
+        font-size: 2.25rem;
+    }
+}
+@media (min-width: 992px) {
+    .express-section h2 {
+        font-size: 2.5rem;
+    }
 }
 /* Express Functionality end */
 
@@ -319,14 +334,35 @@
 }
 .container.communicate > .row > .column-right > ul {
     list-style: none;
-}
-.container.communicate > .row > .column-right > ul li:before {
-    content: '✓';
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--font-color-secondary);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .container.communicate > .row > .column-right > .icons {
     display: flex;
     flex-direction: row;
-    height: 50px;
+}
+.container.communicate > .row > .column-right {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+.container.container.communicate > .row > .column-right > ul {
+    margin-left: 15px;
+}
+.container.container.communicate > .row > .column-right > ul li:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    margin: 0 5px 0 -15px;
+    color: var(--main-color);
+}
+.container.communicate > .row > .column-right > h2 {
+    font-size: 40px;
+    line-height: 1.3em;
 }
 /* Easily communicate end */
 
@@ -334,6 +370,70 @@
 /* Make Your Device end */
 
 /* How sApp works start */
+.app-work-section {
+    background: linear-gradient(
+        -50deg,
+        var(--gradient-1) 0%,
+        var(--gradient-2) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.app-work-section .section-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
+.app-work-section .row:first-child {
+    display: flex;
+    justify-content: center;
+}
+.app-work-section * {
+    color: var(--primary-background);
+}
+
+.app-work-section .work {
+    position: relative;
+    padding: 1.5em;
+}
+.app-work-section .icon {
+    width: 64px;
+}
+@media (min-width: 576px) {
+    .app-work-section .section-title {
+        font-size: 1.9rem;
+    }
+}
+@media (min-width: 768px) {
+    .app-work-section .section-title {
+        font-size: 2.25rem;
+    }
+    .app-work-section .work::after {
+        content: '>';
+        font-weight: 500;
+        position: absolute;
+        color: var(--primary-background);
+        font-size: 60px;
+        bottom: 50%;
+        right: 0;
+        transform: translate(100%, 50%);
+        transition: 0.2s;
+    }
+    .app-work-section .work:hover::after {
+        transform: translate(120%, 50%);
+    }
+    .app-work-section .work:last-child:after {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .app-work-section .section-title {
+        font-size: 2.5rem;
+    }
+}
+
 /* How sApp works end */
 
 /* Simple & Beautiful start */
