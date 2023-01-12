@@ -287,6 +287,9 @@
 /* Easily communicate end */
 
 /* Make Your Device start */
+.manage-sections {
+    color: var(--primary-background);
+}
 /* Make Your Device end */
 
 /* How sApp works start */
