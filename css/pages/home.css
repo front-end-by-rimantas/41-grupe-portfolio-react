@@ -571,6 +571,9 @@
 /* Subscribe to get updates end */
 
 /* Stay Tuned start */
+.contact-section {
+    background-color: var(--secondary-background);
+}
 /* Stay Tuned end */
 
 /* footer start */
