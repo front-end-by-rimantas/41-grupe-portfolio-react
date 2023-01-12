@@ -69,7 +69,7 @@
     border: 2px solid var(--primary-background);
     border-radius: 5px;
     min-width: 240px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     font-size: 0.8125rem;
     font-weight: 700;
@@ -106,7 +106,7 @@
     padding: 3px 3px;
 }
 .navbar > .nav-bar-main .nav-link {
-    font-size: 16px;  
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -128,7 +128,7 @@
     display: block;
     text-align: left;
 }
-  
+
 .nav-item:hover .dropdown-item {
     display: block;
 }
@@ -523,6 +523,48 @@
 /* Team Experts end */
 
 /* sApp is available start */
+.download-section,
+.download-section .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.download-section * {
+    color: var(--primary-background);
+}
+.paralax {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -20;
+    background-image: url(../../img/download-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.paralax::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -10;
+    background-color: rgba(16, 16, 45, 0.8);
+}
+.download-section .row.download {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.download-section img {
+    max-width: 190px;
+    padding: 0 10px;
+}
 /* sApp is available end */
 
 /* Subscribe to get updates start */

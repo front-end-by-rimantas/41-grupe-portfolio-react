@@ -26,6 +26,13 @@ body {
     font-family: Poppins, sans-serif;
 }
 
+.express-section,
+.manage-section,
+.review,
+footer {
+    background-color: var(--primary-background);
+}
+
 /* Bazinis antrastes stilius:*/
 h1,
 h2,
