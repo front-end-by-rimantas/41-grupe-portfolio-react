@@ -451,7 +451,6 @@
 .app-work-section .section-title {
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size: 1.5rem;
 }
 .app-work-section .row:first-child {
     display: flex;
@@ -468,15 +467,7 @@
 .app-work-section .icon {
     width: 64px;
 }
-@media (min-width: 576px) {
-    .app-work-section .section-title {
-        font-size: 1.9rem;
-    }
-}
 @media (min-width: 768px) {
-    .app-work-section .section-title {
-        font-size: 2.25rem;
-    }
     .app-work-section .work::after {
         content: '>';
         font-weight: 500;
@@ -493,11 +484,6 @@
     }
     .app-work-section .work:last-child:after {
         display: none;
-    }
-}
-@media (min-width: 992px) {
-    .app-work-section .section-title {
-        font-size: 2.5rem;
     }
 }
 
@@ -531,7 +517,6 @@
 }
 
 .price-section h2 {
-    font-size: 1.5rem;
     color: var(--font-color-main);
 }
 .price-section * {
@@ -555,26 +540,13 @@
     color: #212529;
     font-weight: 500;
 }
-@media (min-width: 576px) {
-    .price-section h2 {
-        font-size: 1.9rem;
-    }
-}
 
 @media (min-width: 768px) {
-    .price-section h2 {
-        font-size: 2.25rem;
-    }
     .price-section .apps-cols {
         flex-direction: row;
     }
     .price-section .row:first-child {
         margin-bottom: 50px;
-    }
-}
-@media (min-width: 992px) {
-    .price-section h2 {
-        font-size: 2.5rem;
     }
 }
 
