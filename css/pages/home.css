@@ -203,7 +203,7 @@
     color: var(--font-color-main);
 }
 
-.container > .row > .inactive-btn {
+.inactive-btn {
     font-size: 14px;
     font-weight: 500;
     display: flex;
@@ -212,22 +212,22 @@
     gap: 3px;
     margin: 0 0 0 15px;
     padding: 10px 164px 10px 31px;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px 25px;
     box-shadow: 1px 5px 5px #0003;
     align-items: center;
 }
 
-.row > .inactive-btn > .fa {
+.inactive-btn i {
     color: var(--main-color);
     margin: 0 4px 0 0;
     font-weight: 500;
 }
-.row > .inactive-btn > .bword-1 {
+.inactive-btn .bword-1 {
     color: var(--main-color);
     font-weight: 500;
 }
 
-.row > .inactive-btn > .bword-2 {
+.inactive-btn .bword-2 {
     color: var(--font-color-main);
     font-weight: 500;
 }
