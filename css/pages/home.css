@@ -392,7 +392,6 @@
 }
 
 .icon-text > .manage-icon {
-    0.5rem ir 1.5rem
     padding: 8px 24px;
     display: flex;
     height: 54px;
@@ -553,6 +552,17 @@
 /* Full Power end */
 
 /* FAQ start */
+
+.faq-section .secondary-title > .section-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.faq-section > .row > p {
+    margin-top: 10px;
+    text-align: center;
+}
+
 /* FAQ end */
 
 /* Team Experts start */
