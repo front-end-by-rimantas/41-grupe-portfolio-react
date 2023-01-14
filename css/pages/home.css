@@ -559,9 +559,29 @@
     text-transform: capitalize;
 }
 
+.faq-section > .faq-row > .col-left,
+.col-right {
+    margin-top: 2em;
+}
+
 .faq-section > .row > p {
     margin-top: 10px;
     text-align: center;
+}
+
+.faq-section > .faq-row .faq-content {
+    margin-top: 2em;
+}
+
+.faq-section > .faq-row .faq-label {
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .faq-section > .faq-row > .col-left,
+    .col-right {
+        margin-top: 0;
+    }
 }
 
 /* FAQ end */
