@@ -393,6 +393,7 @@
 }
 
 .icon-text > .manage-icon {
+    0.5rem ir 1.5rem
     padding: 8px 24px;
     display: flex;
     height: 54px;
