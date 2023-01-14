@@ -577,6 +577,16 @@
     font-weight: 500;
 }
 
+.faq-section > .contact p {
+    margin-top: 2em;
+}
+
+.faq-section > .contact p,
+.contact a {
+    color: #212529;
+    font-weight: 500;
+}
+
 @media (max-width: 768px) {
     .faq-section > .faq-row > .col-left,
     .col-right {
