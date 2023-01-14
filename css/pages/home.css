@@ -13,6 +13,7 @@
 @import '../components/featured-box.css';
 /* footer.css */
 @import '../components/form.css';
+@import '../components/gallery.css';
 /* header.css */
 @import '../components/header-underline.css';
 @import '../components/review.css';
@@ -277,21 +278,15 @@
     color: var(--primary-background);
 }
 
-.express-section h2 {
-    font-size: 1.5rem;
-    color: var(--font-color-main);
-}
-
 .inactive-btn {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 500;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 3px;
-    margin: 0 0 0 15px;
-    padding: 10px 164px 10px 31px;
-    border-radius: 25px 25px;
+    gap: 0.3rem;
+    padding: 0.75rem 10.25rem 0.5rem 1.5rem;
+    border-radius: 1.5rem 1.5rem;
     box-shadow: 1px 5px 5px #0003;
     align-items: center;
 }
@@ -309,22 +304,6 @@
 .inactive-btn .bword-2 {
     color: var(--font-color-main);
     font-weight: 500;
-}
-@media (min-width: 576px) {
-    .express-section h2 {
-        font-size: 1.9rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .express-section h2 {
-        font-size: 2.25rem;
-    }
-}
-@media (min-width: 992px) {
-    .express-section h2 {
-        font-size: 2.5rem;
-    }
 }
 /* Express Functionality end */
 
@@ -367,10 +346,6 @@
 /* Easily communicate end */
 
 /* Make Your Device start */
-/* .manage-section {
-    color: var(--primary-background);
-} */
-
 .manage-device-image {
     display: flex;
     justify-content: center;
@@ -382,51 +357,28 @@
 .manage-section-list {
     display: flex;
     flex-flow: column nowrap;
-    gap: 10px;
+    gap: 0.6rem;
 }
 .icon-text {
     display: flex;
-    align-items: center;
     flex-flow: row nowrap;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .icon-text > .manage-icon {
-    0.5rem ir 1.5rem
-    padding: 8px 24px;
+    padding: 0.5rem 1.5rem;
     display: flex;
-    height: 54px;
-    width: 54px;
+    height: 3.375rem;
+    width: 3.75rem;
     font-size: 23px;
-    text-align: center;
     justify-content: center;
-    margin-right: 16px;
+    margin-right: 1rem;
     color: var(--main-color);
     background-color: var(--primary-background);
     border: 0.1px solid rgba(0, 0, 0, 0.11);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
     border-radius: 5%;
     align-items: center;
-    text-decoration: none;
-}
-
-@media (min-width: 576px) {
-    .manage-section h2 {
-        font-size: 1.9rem;
-        line-height: 1.4;
-    }
-}
-@media (min-width: 768px) {
-    .manage-section h2 {
-        font-size: 2.25rem;
-        line-height: 1.3;
-    }
-}
-@media (min-width: 992px) {
-    .manage-section h2 {
-        font-size: 2.5rem;
-        line-height: 1.3;
-    }
 }
 
 @media (max-width: 992px) {
