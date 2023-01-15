@@ -13,6 +13,7 @@
 @import '../components/featured-box.css';
 /* footer.css */
 @import '../components/form.css';
+@import '../components/gallery.css';
 /* header.css */
 @import '../components/header-underline.css';
 @import '../components/review.css';
@@ -277,54 +278,32 @@
     color: var(--primary-background);
 }
 
-.express-section h2 {
-    font-size: 1.5rem;
-    color: var(--font-color-main);
-}
-
-.container > .row > .inactive-btn {
-    font-size: 14px;
+.inactive-btn {
+    font-size: 0.9rem;
     font-weight: 500;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 3px;
-    margin: 0 0 0 15px;
-    padding: 10px 164px 10px 31px;
-    border-radius: 25px 25px 25px 25px;
+    gap: 0.3rem;
+    padding: 0.75rem 10.25rem 0.5rem 1.5rem;
+    border-radius: 1.5rem 1.5rem;
     box-shadow: 1px 5px 5px #0003;
     align-items: center;
 }
 
-.row > .inactive-btn > .fa {
+.inactive-btn i {
     color: var(--main-color);
     margin: 0 4px 0 0;
     font-weight: 500;
 }
-.row > .inactive-btn > .bword-1 {
+.inactive-btn .bword-1 {
     color: var(--main-color);
     font-weight: 500;
 }
 
-.row > .inactive-btn > .bword-2 {
+.inactive-btn .bword-2 {
     color: var(--font-color-main);
     font-weight: 500;
-}
-@media (min-width: 576px) {
-    .express-section h2 {
-        font-size: 1.9rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .express-section h2 {
-        font-size: 2.25rem;
-    }
-}
-@media (min-width: 992px) {
-    .express-section h2 {
-        font-size: 2.5rem;
-    }
 }
 /* Express Functionality end */
 
@@ -367,8 +346,45 @@
 /* Easily communicate end */
 
 /* Make Your Device start */
-.manage-sections {
-    color: var(--primary-background);
+.manage-device-image {
+    display: flex;
+    justify-content: center;
+}
+.manage-device-image > img {
+    object-fit: contain;
+}
+
+.manage-section-list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.6rem;
+}
+.icon-text {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 0.6rem;
+}
+
+.icon-text > .manage-icon {
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    height: 3.375rem;
+    width: 3.75rem;
+    font-size: 23px;
+    justify-content: center;
+    margin-right: 1rem;
+    color: var(--main-color);
+    background-color: var(--primary-background);
+    border: 0.1px solid rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
+    border-radius: 5%;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .manage-device-image {
+        display: none;
+    }
 }
 /* Make Your Device end */
 
@@ -387,7 +403,6 @@
 .app-work-section .section-title {
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size: 1.5rem;
 }
 .app-work-section .row:first-child {
     display: flex;
@@ -404,15 +419,7 @@
 .app-work-section .icon {
     width: 64px;
 }
-@media (min-width: 576px) {
-    .app-work-section .section-title {
-        font-size: 1.9rem;
-    }
-}
 @media (min-width: 768px) {
-    .app-work-section .section-title {
-        font-size: 2.25rem;
-    }
     .app-work-section .work::after {
         content: '>';
         font-weight: 500;
@@ -429,11 +436,6 @@
     }
     .app-work-section .work:last-child:after {
         display: none;
-    }
-}
-@media (min-width: 992px) {
-    .app-work-section .section-title {
-        font-size: 2.5rem;
     }
 }
 
@@ -467,7 +469,6 @@
 }
 
 .price-section h2 {
-    font-size: 1.5rem;
     color: var(--font-color-main);
 }
 .price-section * {
@@ -491,26 +492,13 @@
     color: #212529;
     font-weight: 500;
 }
-@media (min-width: 576px) {
-    .price-section h2 {
-        font-size: 1.9rem;
-    }
-}
 
 @media (min-width: 768px) {
-    .price-section h2 {
-        font-size: 2.25rem;
-    }
     .price-section .apps-cols {
         flex-direction: row;
     }
     .price-section .row:first-child {
         margin-bottom: 50px;
-    }
-}
-@media (min-width: 992px) {
-    .price-section h2 {
-        font-size: 2.5rem;
     }
 }
 
@@ -535,26 +523,18 @@
 .download-section * {
     color: var(--primary-background);
 }
-.paralax {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -20;
-    background-image: url(../../img/download-bg.jpg);
-    background-size: cover;
+.download-section {
+    min-height: 500px;
+    background-image: linear-gradient(
+            0deg,
+            rgba(16, 16, 45, 0.8),
+            rgba(16, 16, 45, 0.8)
+        ),
+        url(../../img/download-bg.jpg);
+    background-attachment: fixed;
     background-position: center;
-}
-.paralax::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -10;
-    background-color: rgba(16, 16, 45, 0.8);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .download-section .row.download {
     display: flex;

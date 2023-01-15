@@ -1,0 +1,70 @@
+.experts-gallery {
+    display: grid;
+    gap: 30px;
+}
+
+.experts-gallery > .content {
+    display: grid;
+    gap: 20px;
+}
+.experts-gallery > .content > .card {
+    width: 100%;
+}
+.experts-gallery .card > .img {
+    width: 100%;
+}
+.experts-gallery .card > .hover-layer {
+}
+.experts-gallery .hover-layer > .icon {
+}
+
+@media (min-width: 768px) {
+    .experts-gallery > .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .experts-gallery > .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/*
+.experts-experts-.experts-gallery {
+    display: grid;
+    gap: 30px;
+}
+
+.experts-experts-.experts-gallery > .content {
+    display: grid;
+    gap: 20px;
+}
+.experts-experts-.experts-gallery > .content > .card {
+    width: 100%;
+}
+.experts-experts-.experts-gallery > .card > .img {
+    width: 100%;
+}
+
+.experts-experts-.experts-gallery > .card > .hover-layer {
+}
+
+.experts-experts-.experts-gallery > .hover-layer > .icon {
+}
+
+.experts-experts-.experts-gallery > .card > .expert-name {
+}
+
+@media (min-width: 768px) {
+    .experts-experts-.experts-gallery > .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .experts-experts-.experts-gallery > .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+*/
