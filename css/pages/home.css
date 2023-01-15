@@ -574,6 +574,64 @@
 .contact-section {
     background-color: var(--secondary-background);
 }
+.contact-section > .header-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-section > .header-row .underline {
+    margin: 15px auto;
+}
+.contact-section h2 {
+    font-size: 1.5rem;
+}
+.contact-section .contact-details {
+    margin-bottom: 30px;
+}
+.contact-section .contact-details > a {
+    display: flex;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--font-color-secondary);
+    font-weight: 400;
+}
+.contact-section .contact-details .contact-link {
+    align-self: center;
+}
+.contact-section .contact-details > i {
+    display: flex;
+    flex-direction: row;
+}
+.contact-section > .contact-row {
+    margin-bottom: 30px;
+}
+.contact-section .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .contact-form .fa {
+    padding: 1px 15px;
+}
+@media (min-width: 576px) {
+    .contact-section h2 {
+        font-size: 1.9rem;
+    }
+}
+@media (min-width: 768px) {
+    .contact-section h2 {
+        font-size: 2.25rem;
+    }
+}
+@media (min-width: 992px) {
+    .contact-section h2 {
+        font-size: 2.5rem;
+    }
+}
+
 /* Stay Tuned end */
 
 /* footer start */

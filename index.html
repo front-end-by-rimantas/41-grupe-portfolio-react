@@ -369,28 +369,32 @@
 
     <!-- Stay Tuned start -->
     <section class="container contact-section">
-        <div class="row">
-            <div class="col-12">
+        <div class="row header-row">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-6">
                 <h2 class="section-title">Stay Tuned</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                <div class="underline"></div>
+                <p class="col-12 col-md-8 col-lg-8 col-xl-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-6 col-xl-6">
-                <div class="contact-details">
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                    </p>
-                    <a href="#/">
-                    <i class="fa fa-home "></i>Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002
-                    </a>
-                    <a href="#/"><i class="fa fa-phone"></i>+1 230 456 789-012 345 6789
-                    </a>
-                    <a href="#/"><i class="fa fa-envelope"></i>exampledomain@domain.com
-                    </a>
-                </div>
+        <div class="row contact-row">
+            <div class="contact-details col-12 col-md-6">
+                <p class="left">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                </p>
+                <a href="#/">
+                    <i class="icons fa fa-home "></i>
+                    <span class="contact-link">Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002</span>
+                </a>
+                <a href="#/">
+                    <i class="icons fa fa-phone"></i>
+                    <span class="contact-link">+1 230 456 789-012 345 6789</span>
+                </a>
+                <a href="#/">
+                    <i class="icons fa fa-envelope"></i>
+                    <span class="contact-link">exampledomain@domain.com</span>
+                </a>
             </div>
-            <div class="contact-form">
+            <div class="contact-form col-12 col-md-6">
                 <form action="/">
                     <div class="cell-1">
                         <label for="name">Name</label>
@@ -398,15 +402,14 @@
                     </div>
                     <div class="cell-1">
                         <label for="email">Email</label>
-                        <input id="email" type="email" placeholder="Email">
+                        <input id="email" type="email"  placeholder="Email">
                     </div>
                     <div class="cell-1">
-                        <label for="phone">Phone</label>
-                        <input id="phone" type="tel" placeholder="Phone" pattern="[0-9]{9}">
+                        <label for="name">Subject</label>
+                        <input id="name" type="text" placeholder="Subject">
                     </div>
-                    <div class="cell-1">
-                        <label for="message">Message</label>
-                        <input id="message" type="text" placeholder="Message">
+                    <div class="cell-1 textarea">
+                        <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
                     </div>
                     <div class="cell-1">
                         <button class="btn-form"><i class="fa fa-paper-plane"></i>Send message</button>
