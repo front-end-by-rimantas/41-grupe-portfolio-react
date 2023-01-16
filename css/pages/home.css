@@ -589,6 +589,9 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.download-section .section-title {
+    margin-bottom: 15px;
+}
 .download-section p {
     font-weight: 300;
 }
