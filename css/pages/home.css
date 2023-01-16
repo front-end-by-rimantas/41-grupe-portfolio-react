@@ -550,6 +550,11 @@
 /* FAQ end */
 
 /* Team Experts start */
+
+.team > .underline-title-p {
+    margin-bottom: 60px;
+}
+
 /* Team Experts end */
 
 /* sApp is available start */
