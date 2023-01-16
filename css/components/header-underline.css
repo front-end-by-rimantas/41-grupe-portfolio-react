@@ -14,3 +14,11 @@
 .left {
     align-items: flex-start;
 }
+
+.underline-title-p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
