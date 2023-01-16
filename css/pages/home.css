@@ -39,11 +39,8 @@
     cursor: pointer;
 }
 .navbar > .nav-bar-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    padding: 20px 0;
 }
 .navbar > .nav-bar-main a {
     margin: 0 22px;
@@ -61,11 +58,12 @@
 .navbar > .nav-bar-main > .nav-item {
     float: left;
     overflow: hidden;
+    padding: 20px 0;
 }
 .navbar > .nav-bar-main .dropdown-item {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 80px;
     background-color: var(--primary-background);
     border: 2px solid var(--primary-background);
     border-radius: 5px;
