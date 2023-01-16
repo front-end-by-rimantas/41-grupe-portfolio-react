@@ -588,6 +588,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 .download-section .section-title {
     margin-bottom: 15px;
@@ -596,12 +597,11 @@
     font-weight: 300;
 }
 .download-section a {
-    max-width: 190px;
-    padding: 0 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .download-section img {
-    width: 100%;
+    width: 190px;
+    height: 55px;
 }
 .download-section .additional-info {
     font-style: italic;
