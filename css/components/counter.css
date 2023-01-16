@@ -1,7 +1,14 @@
-.counter-section > .row > .counter {
+.counter-section {
+}
+.counter-section > .row {
     background-color: aquamarine;
+}
+
+.counter-section > .row > .counter-item {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    background-color: bisque;
+    padding-top: 20px;
 }
