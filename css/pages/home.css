@@ -554,4 +554,44 @@
 /* Stay Tuned end */
 
 /* footer start */
+section.container.footer {
+    padding: 100px 0 24px;
+}
+.footer > .link-columns {
+    padding-bottom: 80px;
+}
+.useful-column > ul > li,
+.help-column > ul > li {
+    list-style-type: none;
+    padding: 8px 0;
+}
+.useful-column > ul > li > a,
+.help-column > ul > li > a {
+    color: var(--font-color-fourth);
+}
+
+.socials > p {
+    margin: 8px 0 16px;
+}
+.socials > .social-links > a {
+    text-decoration: none;
+}
+.copyright-block::before {
+    content: '';
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright > p > a {
+    text-decoration: none;
+}
+.copyright > p > i {
+    padding-top: 5px;
+}
+
 /* footer end */
