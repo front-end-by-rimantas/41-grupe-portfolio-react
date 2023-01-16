@@ -508,6 +508,19 @@
 /* FAQ end */
 
 /* Team Experts start */
+
+.underline-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.team > .underline-title {
+    margin-bottom: 60px;
+}
+
 /* Team Experts end */
 
 /* sApp is available start */
