@@ -34,22 +34,53 @@
     <section class="container hero">
         <!-- NAV -->
         <div class="row">
-            <div class="col-12 navbar">
+            <div class="navbar col-12">
                 <a href="/"><img class="navbar-logo-img" src="./img/logo/logo-white.png" alt="Logo"></a>
-                <link rel="stylesheet" href="">
                 <button class="navbar-toggler hidden-lg">
                     <input type="checkbox" />
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <div class="nav-bar-links hidden visible-lg">
-                    <a href="#">Home</a>
-                    <a href="#">Features</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Screenshots</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Contact</a>
+                <!-- NAV MAIN-->
+                <div class="nav-bar-main hidden visible-lg-flex">
+                    <div class="nav-item">
+                        <a class="nav-link" href="/#">Home<i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-item">
+                            <a class="dropdown-link" href="/">Homepage-1</a>
+                            <a class="dropdown-link" href="/">Homepage-2</a>
+                            <a class="dropdown-link" href="/">Homepage-3</a>
+                            <a class="dropdown-link" href="/">Homepage-4</a>
+                            <a class="dropdown-link" href="/">Homepage-5</a>
+                            <a class="dropdown-link" href="/">Homepage-6</a>
+
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#pages">Pages<i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-item">
+                            <a class="dropdown-link" href="/">Inner Pages</a>
+                            <a class="dropdown-link" href="/">Blog Pages</a>
+                            <a class="dropdown-link" href="/">Blog Details</a>
+                            <a class="dropdown-link" href="/">Acounts</a>
+                            <a class="dropdown-link" href="/">Reviews</a>
+                            <a class="dropdown-link" href="/">FAQ</a>
+                            <a class="dropdown-link" href="/">Contact</a>
+                            <a class="dropdown-link" href="/">More Coming Soon</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#screenshots">Screenshots</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,7 +124,7 @@
     <!-- hero end -->
 
     <!-- Express Functionality start -->
-    <section class="container express-section">
+    <section class="container express-section" id="features">
         <div class="row">
             <div class="col-2 inactive-btn">
                 <i class="fa fa-lightbulb-o"></i>
@@ -152,7 +183,7 @@
     <!-- Express Functionality end -->
 
     <!-- Easily communicate start -->
-    <section class="container communicate" style="background-color: #f6f9fe;">
+    <section class="container communicate" style="background-color: #f6f9fe;" id="contact">
         <div class=" row">
             <div class="column-left col-12 col-lg-6 "><img class="cell" src="./img/discover_thumb.png" alt=""></div>
             <div class="column-right col-12 col-lg-6 ">
@@ -175,33 +206,78 @@
     <!-- Easily communicate end -->
 
     <!-- Make Your Device start -->
+
+    <section class="container manage-section" id="screenshots">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="manage-section-list col-12 col-md-10 col-lg-8 col-xl-6">
+                    <div class="secondary-title">
+                        <h2 class="section-title">Make your Device Manage Everything For you</h2>
+                    </div>
+
+                    <div class="icon-text">
+                        <div class="manage-icon">
+                            <i class="fa fa-align-justify" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda accusamus, velit ea ad itaque.</p>
+                    </div>
+                    <div class="icon-text">
+                        <div class="manage-icon">
+                            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                        </div>
+                        <p class="manage-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nam! Sint sit odit rem atque?</p>
+                    </div>
+                    <div class="icon-text">
+                        <div class="manage-icon">
+                            <i class="fa fa-fire" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione earum, obcaecati exercitationem est doloremque perferendis!</p>
+                    </div>
+                    <div class="icon-text">
+                        <div class="manage-icon">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ex a deleniti iure cupiditate nisi.</p>
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn">Learsn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 manage-device-image">
+                <img src="./img/service_thumb_2.png" alt="service_thumb_image">
+            </div>
+        </div>
+    </section>
     <!-- Make Your Device end -->
 
     <!-- How sApp works start -->
     <section class="container app-work-section">
-        <div class="row">
-            <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+        <div class="row ">
+            <div class="col-12 col-lg-6 col-xl-6">
                 <h2 class="section-title">How sApp works?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
 
             </div>
         </div>
-        <div class="row feature-boxes">
-            <div class="col-12 col-md-6 col-lg-4 box">
-                <img src="img/app-work/work_thumb_1.png" alt="featured-icon-1" class="icon">
-                <h3 class="box-header">Install the App</h3>
+        <div class="row works-contain">
+            <div class="col-12 col-md-4 work">
+                <img src="img/app-work/work_thumb_1.png" alt="cloud" class="icon">
+                <h3 class="work-header">Install the App</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?
                 </p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 box">
-                <img src="img/app-work/work_thumb_2.png" alt="featured-icon-1" class="icon">
-                <h3 class="box-header">Setup your profile</h3>
+            <div class="col-12 col-md-4 work">
+                <img src="img/app-work/work_thumb_2.png" alt="profile" class="icon">
+                <h3 class="work-header">Setup your profile</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?
                 </p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 box">
-                <img src="img/app-work/work_thumb_3.png" alt="featured-icon-1" class="icon">
-                <h3 class="box-header">Enjoy the features!</h3>
+            <div class="col-12 col-md-4 work">
+                <img src="img/app-work/work_thumb_3.png" alt="settings" class="icon">
+                <h3 class="work-header">Enjoy the features!</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?
                 </p>
             </div>
@@ -239,7 +315,7 @@
     <!-- Reviews end -->
 
     <!-- Full Power start -->
-    <section class="container price-section">
+    <section class="container price-section" id="pricing">
         <div class="row">
             <div class="secondary-title center col-12 col-md-10 col-lg-8 col-xl-6">
                 <h2 class="section-title">Unlock Full Power Of sApp</h2>
@@ -281,12 +357,130 @@
     <!-- Full Power end -->
 
     <!-- FAQ start -->
+    <section class="container faq-section">
+        <div class="row">
+            <div class="secondary-title center">
+                <h2 class="section-title">Frequently asked questions</h2>
+                <div class="underline"></div>
+            </div>
+            <p class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+        </div>
+        <div class="row faq-row">
+            <div class=" col-12 col-md-6 col-left">
+                <div class="faq-content">
+                    <h5 class="faq-label">How install sAPP?</h5>
+                    <p class="faq-description">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                </div>
+                <div class="faq-content">
+                    <h5 class="faq-label">Can I get support from the Author?</h5>
+                    <p class="faq-description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                </div>
+                <div class="faq-content">
+                    <h5 class="faq-label">Do you have a free trail?</h5>
+                    <p class="faq-description">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-right">
+                <div class="faq-content">
+                    <h5 class="faq-label">How can I edit my personal information?</h5>
+                    <p class="faq-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <div class="faq-content">
+                    <h5 class="faq-label">Contact form isn't working?</h5>
+                    <p class="faq-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                </div>
+                <div class="faq-content">
+                    <h5 class="faq-label">Contact form isn't working?</h5>
+                    <p class="faq-description">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row contact col-12">
+            <p>Haven't find suitable answer? <a href="#">Tell us what you need.</a></p>
+        </div>
+    </section>
     <!-- FAQ end -->
 
     <!-- Team Experts start -->
+    <section class="container team">
+        <div class="row underline-title-p">
+            <div class="secondary-title center col-12 col-md-10 col-lg-8 col-xl-6">
+                <h2 class="section-title">Our Team Experts</h2>
+                <div class="underline"></div>
+            </div>
+            <p class="col-12 col-md-10 col-lg-8 col-xl-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xxl-10 ml-xxl-1 experts-gallery">
+                <div class="content">
+                    <div class="card visual">
+                        <img class="img" src="./img/experts/avatar-1.png" alt="Expert1 photo">
+                        <div class="hover-layer">
+                            <p class="expert-name">Junaid Hasan</p>
+                            <p class="expert-position">Founder & CEO</p>
+                            <a href="#" class="icon fa fa-facebook"></a>
+                            <a href="#" class="icon fa fa-twitter"></a>
+                            <a href="#" class="icon fa fa-google-plus"></a>
+                            <a href="#" class="icon fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="card visual">
+                        <img class="img" src="./img/experts/avatar-2.png" alt="Expert2 photo">
+                        <div class="hover-layer">
+                            <p class="expert-name">Junaid Hasan</p>
+                            <p class="expert-position">Founder & CEO</p>
+                            <a href="#" class="icon fa fa-facebook"></a>
+                            <a href="#" class="icon fa fa-twitter"></a>
+                            <a href="#" class="icon fa fa-google-plus"></a>
+                            <a href="#" class="icon fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="card visual">
+                        <img class="img" src="./img/experts/avatar-3.png" alt="Expert3 photo">
+                        <div class="hover-layer">
+                            <p class="expert-name">Junaid Hasan</p>
+                            <p class="expert-position">Founder & CEO</p>
+                            <a href="#" class="icon fa fa-facebook"></a>
+                            <a href="#" class="icon fa fa-twitter"></a>
+                            <a href="#" class="icon fa fa-google-plus"></a>
+                            <a href="#" class="icon fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="card visual">
+                        <img class="img" src="./img/experts/avatar-4.png" alt="Expert4 photo">
+                        <div class="hover-layer">
+                            <p class="expert-name">Junaid Hasan</p>
+                            <p class="expert-position">Founder & CEO</p>
+                            <a href="#" class="icon fa fa-facebook"></a>
+                            <a href="#" class="icon fa fa-twitter"></a>
+                            <a href="#" class="icon fa fa-google-plus"></a>
+                            <a href="#" class="icon fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Team Experts end -->
 
     <!-- sApp is available start -->
+    <section class="container download-section" id="pages">
+        <div class="row ">
+            <div class="col-12 col-lg-6 col-xl-6">
+                <h2 class="section-title">sApp is available for all devices</h2>
+                <p>sApp is available for all devices, consectetur adipisicing elit. Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod neque eos totam. Delectus quae animi tenetur voluptates doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt autem, aperiam natus.</p>
+            </div>
+        </div>
+        <div class="row download">
+            <div>
+                <a href="#"><img src="./img/google-app/google-play.png" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/google-app/app-store.png" alt=""></a>
+            </div>
+        </div>
+        <p>* Available on iPhone, iPad and all Android devices</p>
+    </section>
     <!-- sApp is available end -->
 
     <!-- Subscribe to get updates start -->
@@ -306,12 +500,62 @@
     <!-- Subscribe to get updates end -->
 
     <!-- Stay Tuned start -->
+    <section class="container contact-section">
+        <div class="row header-row">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                <h2 class="section-title">Stay Tuned</h2>
+                <div class="underline"></div>
+                <p class="col-12 col-md-8 col-lg-8 col-xl-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                </p>
+            </div>
+        </div>
+        <div class="row contact-row">
+            <div class="contact-details col-12 col-md-6">
+                <p class="left">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                </p>
+                <a href="#/">
+                    <i class="icons fa fa-home "></i>
+                    <span class="contact-link">Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002</span>
+                </a>
+                <a href="#/">
+                    <i class="icons fa fa-phone"></i>
+                    <span class="contact-link">+1 230 456 789-012 345 6789</span>
+                </a>
+                <a href="#/">
+                    <i class="icons fa fa-envelope"></i>
+                    <span class="contact-link">exampledomain@domain.com</span>
+                </a>
+            </div>
+            <div class="contact-form col-12 col-md-6">
+                <form action="/">
+                    <div class="cell-1">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" required placeholder="Name">
+                    </div>
+                    <div class="cell-1">
+                        <label for="email">Email</label>
+                        <input id="email" type="email"  placeholder="Email">
+                    </div>
+                    <div class="cell-1">
+                        <label for="name">Subject</label>
+                        <input id="name" type="text" placeholder="Subject">
+                    </div>
+                    <div class="cell-1 textarea">
+                        <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="cell-1">
+                        <button class="btn-form"><i class="fa fa-paper-plane"></i>Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <!-- Stay Tuned end -->
 
     <!-- Main end -->
 
     <!-- footer start -->
-    <footer class="container">
+    <!-- <footer class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-xl-4">
                 FOOTER CONTENT1
@@ -320,7 +564,57 @@
                 FOOTER CONTENT2
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <section class="container footer">
+        <div class="row link-columns">
+            <div class="col-12 col-sm-6 col-lg-3 socials">
+                <img src="./img/logo/logo.png" alt="logo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
+                <div class="social-links">
+                    <a href="#" class="fa fa-facebook "></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fa fa-vine"></a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 useful-column">
+                <h3>Useful Links</h3>
+                <ul class="useful-menu">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 help-column">
+                <h3>Product Help</h3>
+                <ul class="help-menu">
+                    <li><a>FAQ</a></li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Support</a></li>
+                    <li><a>Terms & Conditions</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 download-column">
+                <h3>Download</h3>
+                <a href="#"><img src="./img/google-app/google-play-black.png" alt="google play"></a>
+                <a href="#"><img src="./img/google-app/app-store-black.png" alt="app store"></a>
+            </div>
+        </div>
+        <div class="row copyright-block">
+            <div class="col-12 copyright">
+                <p>&copy; Copyrights 2020 sApp All rights reserved.</p>
+                <p>Made with <i class="fa fa-heart"></i> By <a href=""> Theme Land</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- pirma dalis  -->
+
+    <!-- antra dalis
+    
+    -->
     <!-- footer end -->
 </body>
 
