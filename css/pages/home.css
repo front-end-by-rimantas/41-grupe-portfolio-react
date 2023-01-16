@@ -571,7 +571,7 @@
     color: var(--primary-background);
 }
 .download-section {
-    min-height: 500px;
+    height: 500px;
     background-image: linear-gradient(
             0deg,
             rgba(16, 16, 45, 0.8),
@@ -586,11 +586,19 @@
 .download-section .row.download {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+}
+.download-section p {
+    font-weight: 300;
 }
 .download-section img {
     max-width: 190px;
     padding: 0 10px;
+    margin-bottom: 20px;
+}
+.download-section .additional-info {
+    font-style: italic;
 }
 /* sApp is available end */
 
