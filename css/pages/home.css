@@ -571,7 +571,7 @@
     color: var(--primary-background);
 }
 .download-section {
-    height: 500px;
+    min-height: 500px;
     background-image: linear-gradient(
             0deg,
             rgba(16, 16, 45, 0.8),
