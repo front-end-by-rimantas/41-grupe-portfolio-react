@@ -1,0 +1,7 @@
+.counter-section > .row > .counter {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
