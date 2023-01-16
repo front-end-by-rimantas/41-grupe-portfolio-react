@@ -210,37 +210,41 @@
 
 .container > .row.hero > .box-container {
     margin: 0 auto;
+    padding: 0;
 }
 
 .box-container > .box-form {
+    margin: 0 auto;
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 15px 50px 50px 50px;
+    padding: 1.5em;
     border-radius: 4px;
     background-color: var(--primary-background);
     gap: 20px;
-}
-
-.box-form > .section-title {
-    text-align: center;
-    font-size: 28px;
-}
-
-.box-form > .description-right-1 {
-    font-size: 16px;
-    text-align: center;
-    font-weight: 300;
-    color: var(--font-color-fith);
 }
 
 .box-form > form {
     width: 100%;
 }
 
+.box-form > .section-title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6em;
+    width: 100%;
+}
+
+.box-form > .description-right-1 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    color: var(--font-color-fith);
+}
+
 .box-form > .description-right-2 {
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -255,6 +259,15 @@
     .btn-hero {
         width: 205px;
         padding: 14px;
+    }
+    .box-container > .box-form {
+        padding: 3em;
+    }
+    .box-form > .description-right-1 {
+        font-size: 16px;
+    }
+    .box-form > .section-title {
+        font-size: 1.8em;
     }
 }
 
