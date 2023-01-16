@@ -10,6 +10,7 @@
 /* components (by alphabet):  */
 @import '../components/button.css';
 @import '../components/app-plan.css';
+@import '../components/counter.css';
 @import '../components/featured-box.css';
 /* footer.css */
 @import '../components/form.css';
