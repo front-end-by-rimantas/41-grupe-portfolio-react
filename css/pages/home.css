@@ -412,6 +412,10 @@
 }
 .container.subscribe > .subscribing {
     max-width: 50%;
+    background-image: url(../../img/subscribe-bg.png);
+    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 .container.subscribe {
     display: flex;
@@ -427,10 +431,7 @@
     justify-content: center;
     color: var(--primary-background);
 }
-.container.subscribe > .subscribing > .map {
-    width: 100%;
-    height: 100%;
-}
+
 /* Subscribe to get updates end */
 
 /* Stay Tuned start */
