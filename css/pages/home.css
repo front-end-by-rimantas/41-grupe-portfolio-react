@@ -339,10 +339,7 @@
     margin: 0 5px 0 -15px;
     color: var(--main-color);
 }
-.container.communicate > .row > .column-right > h2 {
-    font-size: 1.5em;
-    line-height: 1.3em;
-}
+
 /* Easily communicate end */
 
 /* Make Your Device start */
@@ -595,33 +592,50 @@
 /* sApp is available end */
 
 /* Subscribe to get updates start */
-.container.subscribe > .subscribing > h2 {
-    font-size: 2.5em;
+.container.subscribe > .sub-image > .row > .section-title {
     text-align: center;
+    margin-top: 10px;
 }
-.container.subscribe > .subscribing > p {
+.container.subscribe > .sub-image > .row > p {
     text-align: center;
+    margin-top: 10px;
 }
-.container.subscribe > .subscribing {
-    max-width: 50%;
-    background-image: url(../../img/subscribe-bg.png);
+.sub-image {
+    background: url(../../img/subscribe-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-.container.subscribe {
     display: flex;
     justify-content: center;
 }
+
+.container.subscribe > .sub-image > .row {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 16px;
+}
 .sub-btn {
-    margin-top: 20px;
     background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 7px;
+    border: none;
 }
 .sub-btn > a {
     text-decoration: none;
     display: flex;
     justify-content: center;
     color: var(--primary-background);
+    font-size: 15px;
+    font-weight: 500;
+}
+.container.subscribe > .sub-image > .row > form > .blank > input {
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    height: 60px;
+    margin-top: 15px;
 }
 
 /* Subscribe to get updates end */
