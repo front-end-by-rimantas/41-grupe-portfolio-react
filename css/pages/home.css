@@ -595,10 +595,13 @@
 .download-section p {
     font-weight: 300;
 }
-.download-section img {
+.download-section a {
     max-width: 190px;
     padding: 0 10px;
     margin-bottom: 20px;
+}
+.download-section img {
+    width: 100%;
 }
 .download-section .additional-info {
     font-style: italic;
