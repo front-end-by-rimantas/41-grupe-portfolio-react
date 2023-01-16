@@ -29,6 +29,8 @@ body {
 .express-section,
 .manage-section,
 .review,
+.team,
+.faq-section,
 footer {
     background-color: var(--primary-background);
 }
