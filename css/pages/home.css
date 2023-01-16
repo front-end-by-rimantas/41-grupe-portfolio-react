@@ -281,7 +281,7 @@
     color: var(--main-color);
 }
 .container.communicate > .row > .column-right > h2 {
-    font-size: 40px;
+    font-size: 1.5em;
     line-height: 1.3em;
 }
 /* Easily communicate end */
