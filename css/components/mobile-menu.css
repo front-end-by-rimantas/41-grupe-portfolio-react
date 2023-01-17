@@ -22,9 +22,6 @@
 .navbar > .nav-bar-main.clicked * {
     color: black !important;
 }
-.navbar > .nav-bar-main.clicked * {
-    /* pointer-events: none !important; */
-}
 
 .clicked .nav-item:hover .dropdown-item {
     display: none;
