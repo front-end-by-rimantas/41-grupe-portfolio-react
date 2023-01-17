@@ -616,11 +616,18 @@
     max-width: 51.5%;
     gap: 16px;
 }
+.sub-btn:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
 .sub-btn {
     background-color: var(--main-color);
     padding: 18px 20px 18px 20px;
     border-radius: 7px;
     border: none;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
 }
 .sub-btn > a {
     text-decoration: none;
