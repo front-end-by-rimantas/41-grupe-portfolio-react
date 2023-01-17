@@ -43,7 +43,7 @@
                     <span></span>
                 </button>
                 <!-- NAV MAIN-->
-                <div class="nav-bar-main hidden visible-lg-flex">
+                <div class="nav-bar-main hidden visible-lg">
                     <div class="nav-item">
                         <a class="nav-link" href="/#">Home<i class="fa fa-caret-down"></i></a>
                         <div class="dropdown-item">
@@ -183,11 +183,11 @@
     <!-- Express Functionality end -->
 
     <!-- Easily communicate start -->
-    <section class="container communicate" style="background-color: #f6f9fe;" id="contact">
+    <section class="container communicate" style="background-color: #f6f9fe;">
         <div class=" row">
             <div class="column-left col-12 col-lg-6 "><img class="cell" src="./img/discover_thumb.png" alt=""></div>
             <div class="column-right col-12 col-lg-6 ">
-                <h2>Easily communicate with clients using sApp.</h2>
+                <h2 class="section-title">Easily communicate with clients using sApp.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolor ut iusto vitae autem neque eum ipsam, impedit asperiores vel cumque laborum dicta repellendus inventore voluptatibus et explicabo nobis unde.</p>
                 <ul>
                     <li>Combined with a handful of model sentence structures looks reasonable.</li>
@@ -472,22 +472,33 @@
             </div>
         </div>
         <div class="row download">
-            <div>
-                <a href="#"><img src="./img/google-app/google-play.png" alt=""></a>
-            </div>
-            <div>
-                <a href="#"><img src="./img/google-app/app-store.png" alt=""></a>
-            </div>
+            <a href="#"><img src="./img/google-app/google-play.png" alt="google-play"></a>
+            <a href="#"><img src="./img/google-app/app-store.png" alt="app-store"></a>
         </div>
-        <p>* Available on iPhone, iPad and all Android devices</p>
+        <p class="additional-info">* Available on iPhone, iPad and all Android devices</p>
     </section>
     <!-- sApp is available end -->
 
     <!-- Subscribe to get updates start -->
+    <section class="container subscribe col-12 col-lg-6 col-xl-6">
+        <div class="sub-image">
+            <div class="row">
+                <h2 class="section-title">Subscribe to get updates</h2>
+                <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
+                <form action=" /">
+                    <div class="blank">
+                        <label for="email">Enter your email</label>
+                        <input id="email" type="text" required placeholder="Enter your email">
+                    </div>
+                </form>
+                <div class="sub-btn"><a href="#">Subscribe</a></div>
+            </div>
+        </div>
+    </section>
     <!-- Subscribe to get updates end -->
 
     <!-- Stay Tuned start -->
-    <section class="container contact-section">
+    <section class="container contact-section" id="contact">
         <div class="row header-row">
             <div class="col-12 col-md-10 col-lg-8 col-xl-6">
                 <h2 class="section-title">Stay Tuned</h2>

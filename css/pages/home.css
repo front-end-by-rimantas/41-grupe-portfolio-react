@@ -39,11 +39,8 @@
     cursor: pointer;
 }
 .navbar > .nav-bar-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    padding: 20px 0;
 }
 .navbar > .nav-bar-main a {
     margin: 0 22px;
@@ -61,11 +58,12 @@
 .navbar > .nav-bar-main > .nav-item {
     float: left;
     overflow: hidden;
+    padding: 20px 0;
 }
 .navbar > .nav-bar-main .dropdown-item {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 80px;
     background-color: var(--primary-background);
     border: 2px solid var(--primary-background);
     border-radius: 5px;
@@ -330,19 +328,16 @@
     gap: 25px;
     flex-direction: column;
 }
-.container.container.communicate > .row > .column-right > ul {
+.container.communicate > .row > .column-right > ul {
     margin-left: 15px;
 }
-.container.container.communicate > .row > .column-right > ul li:before {
+.container.communicate > .row > .column-right > ul li:before {
     font-family: 'FontAwesome';
     content: '\f00c';
     margin: 0 5px 0 -15px;
     color: var(--main-color);
 }
-.container.communicate > .row > .column-right > h2 {
-    font-size: 40px;
-    line-height: 1.3em;
-}
+
 /* Easily communicate end */
 
 /* Make Your Device start */
@@ -586,15 +581,78 @@
 .download-section .row.download {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+}
+.download-section .section-title {
+    margin-bottom: 15px;
+}
+.download-section p {
+    font-weight: 300;
+}
+.download-section a {
+    margin-bottom: 10px;
 }
 .download-section img {
-    max-width: 190px;
-    padding: 0 10px;
+    width: 190px;
+    height: 55px;
+}
+.download-section .additional-info {
+    font-style: italic;
 }
 /* sApp is available end */
 
 /* Subscribe to get updates start */
+.container.subscribe > .sub-image > .row > .section-title {
+    text-align: center;
+    margin-top: 10px;
+}
+.container.subscribe > .sub-image > .row > p {
+    text-align: center;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.sub-image {
+    background: url(../../img/subscribe-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container.subscribe > .sub-image > .row {
+    display: flex;
+    flex-direction: column;
+    max-width: 51.5%;
+    gap: 16px;
+}
+.sub-btn {
+    background-color: var(--main-color);
+    padding: 18px 20px 18px 20px;
+    border-radius: 7px;
+    border: none;
+}
+.sub-btn > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-background);
+    font-size: 15px;
+    font-weight: 500;
+}
+.container.subscribe > .sub-image > .row > form > .blank > input {
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    height: 60px;
+    margin-top: 15px;
+    color: black;
+    font-size: 15px;
+}
+
 /* Subscribe to get updates end */
 
 /* Stay Tuned start */
