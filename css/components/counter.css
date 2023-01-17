@@ -1,14 +1,39 @@
 .counter-section {
 }
 .counter-section > .row {
-    background-color: aquamarine;
+    position: relative;
 }
 
 .counter-section > .row > .counter-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: bisque;
     padding-top: 20px;
+    position: relative;
+}
+
+.counter-section .counter-item > .counter-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: var(--gradient-2);
+}
+
+.counter-section > .row > .counter-item + .counter-item::before {
+    content: '';
+    width: 1px;
+    height: 35px;
+    background-color: var(--font-color-main);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-18px, 100%);
+    color: #000;
+    opacity: 0.2;
+}
+
+.counter-section .counter-item > .counter-description {
+    font-size: 10px;
+    font-weight: 700;
 }
