@@ -1,13 +1,27 @@
 .navbar > .nav-bar-main.clicked {
     position: fixed;
     background-color: var(--primary-background);
-
     top: 0;
     right: 0;
     bottom: 0;
+    width: 320px;
     display: flex;
     flex-direction: column;
+    /* z-index: 10; */
+}
+.navbar > .nav-bar-main.clicked::before {
+    content: '';
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
 }
 .navbar > .nav-bar-main.clicked * {
     color: black !important;
+}
+.navbar > .nav-bar-main.clicked * {
+    pointer-events: none !important;
 }

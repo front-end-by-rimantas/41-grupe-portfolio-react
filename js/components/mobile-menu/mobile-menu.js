@@ -5,7 +5,6 @@ function hamburgerClick() {
     hamburgerDOM.addEventListener('click', () => {
         navDOM.classList.toggle('hidden');
         navDOM.classList.toggle('clicked');
-
         hamburgerDOM.classList.toggle('hidden');
         console.log('clicked');
     });
