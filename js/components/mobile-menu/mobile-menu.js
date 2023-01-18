@@ -3,9 +3,11 @@ const mobileDOM = document.getElementById('mobile-nav');
 // Coppy all meniu to new div
 mobileDOM.innerHTML =
     `<div class="close">
-                    <a href="#" class="fa fa-times"></a>
+                    <icon href="#" class="fa fa-times"></icon>
                 </div>` + document.querySelector('.nav-bar-main').innerHTML;
+// hamburger button
 const hamburgerDOM = document.querySelector('.navbar-toggler');
+// close button
 const closeDOM = document.querySelector('.close');
 
 function hamburgerClick() {
@@ -15,6 +17,6 @@ function hamburgerClick() {
     closeDOM.addEventListener('click', () => {
         mobileDOM.classList.toggle('hidden');
     });
-    console.log(mobileDOM.innerHTML);
+    // console.log(mobileDOM.innerHTML);
 }
 export { hamburgerClick };

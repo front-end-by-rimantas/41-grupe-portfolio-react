@@ -29,11 +29,20 @@
     right: 0;
     top: 0;
     padding: 5px;
+    font-size: 25px;
+    opacity: 0.5;
+}
+#mobile-nav .close:hover {
+    cursor: pointer;
 }
 
-#mobile-nav * {
+#mobile-nav *,
+#mobile-nav .fa-caret-down {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.75);
+}
+#mobile-nav .fa-caret-down {
+    opacity: 0.3;
 }
 #mobile-nav .nav-item {
     padding: 15px;
