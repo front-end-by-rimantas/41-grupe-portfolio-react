@@ -115,6 +115,9 @@
     font-family: inherit;
     margin: 0;
 }
+.navbar > .nav-bar-main .fa-caret-down {
+    color: white;
+}
 .navbar a:hover,
 .nav-link:hover .nav-link {
     color: var(--primary-background);

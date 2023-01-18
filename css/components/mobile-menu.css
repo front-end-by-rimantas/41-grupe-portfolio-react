@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     z-index: 2;
+    overflow: scroll;
 }
 .navbar > #mobile-nav::after {
     content: '';
@@ -40,11 +41,12 @@
 }
 #mobile-nav .fa-caret-down {
     opacity: 0.3;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 #mobile-nav .nav-item {
     padding: 15px;
     font-size: 14px;
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 #mobile-nav .close a {
