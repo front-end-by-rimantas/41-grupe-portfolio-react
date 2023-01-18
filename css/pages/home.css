@@ -117,6 +117,8 @@
 }
 .navbar > .nav-bar-main .fa-caret-down {
     color: white;
+    font-size: 16px;
+    transform: translateX(-100%);
 }
 .navbar a:hover,
 .nav-link:hover .nav-link {
