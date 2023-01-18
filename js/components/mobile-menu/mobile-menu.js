@@ -29,7 +29,7 @@ function hamburgerClick() {
     });
 
     for (let i = 0; i < menuDOM.length; i++) {
-        // selectinam a (children[0]vietoj .nav-link, nes jis uzima visa konteineri su sub-nav, todel klikinant 'vaikus' kyla prob
+        // selectinam a (children[0]vietoj .nav-item, nes jis uzima visa konteineri su sub-nav, todel klikinant 'vaikus' kyla prob
         menuDOM[i].children[0].addEventListener('click', (e) => {
             menuDOM[i].children[1].classList.toggle('hidden');
             /*             
