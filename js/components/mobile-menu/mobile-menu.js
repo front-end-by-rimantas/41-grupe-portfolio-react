@@ -30,7 +30,7 @@ function hamburgerClick() {
     for (let i = 0; i < menuDOM.length; i++) {
         menuDOM[i].addEventListener('click', () => {
             menuDOM[i].children[1].classList.toggle('hidden');
-            console.log(menuDOM[i]);
+            // console.log(menuDOM[i]);
         });
     }
 
