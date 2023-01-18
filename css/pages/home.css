@@ -39,11 +39,8 @@
     cursor: pointer;
 }
 .navbar > .nav-bar-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    padding: 20px 0;
 }
 .navbar > .nav-bar-main a {
     margin: 0 22px;
@@ -61,11 +58,12 @@
 .navbar > .nav-bar-main > .nav-item {
     float: left;
     overflow: hidden;
+    padding: 20px 0;
 }
 .navbar > .nav-bar-main .dropdown-item {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 80px;
     background-color: var(--primary-background);
     border: 2px solid var(--primary-background);
     border-radius: 5px;
@@ -217,19 +215,23 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 15px 50px 50px 50px;
+    padding: 20px;
     border-radius: 4px;
     background-color: var(--primary-background);
-    gap: 20px;
+    gap: 15px;
 }
 
 .box-form > .section-title {
+    width: 100%;
+    margin: 10px;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .box-form > .description-right-1 {
-    font-size: 16px;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
     text-align: center;
     font-weight: 300;
     color: var(--font-color-fith);
@@ -255,6 +257,18 @@
     .btn-hero {
         width: 205px;
         padding: 14px;
+    }
+    .box-container > .box-form {
+        padding: 15px 50px 50px 50px;
+    }
+    .box-form > .section-title {
+        width: 100%;
+        padding-top: 30px;
+        margin-top: center;
+        font-size: 28px;
+    }
+    .box-form > .description-right-1 {
+        font-size: 16px;
     }
 }
 
@@ -330,19 +344,16 @@
     gap: 25px;
     flex-direction: column;
 }
-.container.container.communicate > .row > .column-right > ul {
+.container.communicate > .row > .column-right > ul {
     margin-left: 15px;
 }
-.container.container.communicate > .row > .column-right > ul li:before {
+.container.communicate > .row > .column-right > ul li:before {
     font-family: 'FontAwesome';
     content: '\f00c';
     margin: 0 5px 0 -15px;
     color: var(--main-color);
 }
-.container.communicate > .row > .column-right > h2 {
-    font-size: 40px;
-    line-height: 1.3em;
-}
+
 /* Easily communicate end */
 
 /* Make Your Device start */
@@ -586,15 +597,83 @@
 .download-section .row.download {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+}
+.download-section .section-title {
+    margin-bottom: 15px;
+}
+.download-section p {
+    font-weight: 300;
+}
+.download-section a {
+    margin-bottom: 10px;
 }
 .download-section img {
-    max-width: 190px;
-    padding: 0 10px;
+    width: 190px;
+    height: 55px;
+}
+.download-section .additional-info {
+    font-style: italic;
 }
 /* sApp is available end */
 
 /* Subscribe to get updates start */
+.container.subscribe > .sub-image > .row > .section-title {
+    text-align: center;
+    margin-top: 10px;
+}
+.container.subscribe > .sub-image > .row > p {
+    text-align: center;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.sub-image {
+    background: url(../../img/subscribe-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container.subscribe > .sub-image > .row {
+    display: flex;
+    flex-direction: column;
+    max-width: 51.5%;
+    gap: 16px;
+}
+.sub-btn:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.1s;
+}
+.sub-btn {
+    background-color: var(--main-color);
+    padding: 18px 20px 18px 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+.sub-btn > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-background);
+    font-size: 15px;
+    font-weight: 500;
+}
+.container.subscribe > .sub-image > .row > form > .blank > input {
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    height: 60px;
+    margin-top: 15px;
+    color: black;
+    font-size: 15px;
+}
+
 /* Subscribe to get updates end */
 
 /* Stay Tuned start */
@@ -664,14 +743,13 @@
 /* footer start */
 section.container.footer {
     padding: 100px 0 24px;
-    position: sticky;
-    bottom: 0;
+    display: block;
+    height: 100%;
     background-color: var(--primary-background);
-    height: auto;
-    z-index: -1;
+    z-index: 1;
 }
 .footer > .link-columns {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 .useful-column > ul > li,
 .help-column > ul > li {
@@ -683,16 +761,65 @@ section.container.footer {
     color: var(--font-color-fourth);
 }
 
-.socials > p {
+.socials-column > p {
     margin: 8px 0 16px;
 }
-.link-columns > .download-column > a > img {
-    width: 170px;
-    height: 50px;
+
+.container.footer > .link-columns > .socials-column {
+    margin-right: 20px 0 0;
 }
-.socials > .social-links > a {
+
+.social-links > a {
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: var(--primary-background);
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 5px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.socials-column h3,
+.useful-column h3,
+.help-column h3,
+.download-column h3 {
+    margin-top: 0;
+}
+
+.social-links > a.facebook {
+    background-color: #3b5999;
+}
+.social-links > a.twitter {
+    background-color: #55acee;
+}
+.social-links > a.google {
+    background-color: #dd4b39;
+}
+.social-links > a.vine {
+    background-color: #00b489;
+}
+
+.download-column > a {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.useful-column a,
+.help-column a {
     text-decoration: none;
 }
+
+.link-columns > .download-column > a > img {
+    width: 160px;
+    height: 50px;
+}
+
 .copyright-block::before {
     content: '';
     display: block;
@@ -711,4 +838,9 @@ section.container.footer {
     padding-top: 5px;
 }
 
+@media (min-width: 768px) {
+    .copyright {
+        justify-content: space-between;
+    }
+}
 /* footer end */
