@@ -10,6 +10,7 @@
     flex-direction: column;
     z-index: 2;
     overflow: scroll;
+    box-shadow: 0 0 20px black;
 }
 .navbar > #mobile-nav::after {
     content: '';
@@ -43,6 +44,11 @@
     font-size: 20px;
     transform: translateY(-10%);
     cursor: pointer;
+}
+#mobile-nav .dropdown-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
 }
 #mobile-nav .fa-caret-down {
     opacity: 0.3;
