@@ -11,6 +11,7 @@
 @import '../components/button.css';
 @import '../components/app-plan.css';
 @import '../components/featured-box.css';
+@import '../components/mobile-menu.css';
 /* footer.css */
 @import '../components/form.css';
 @import '../components/gallery.css';
@@ -114,6 +115,11 @@
     font-family: inherit;
     margin: 0;
 }
+.navbar > .nav-bar-main .fa-caret-down {
+    color: white;
+    font-size: 16px;
+    transform: translateX(-100%);
+}
 .navbar a:hover,
 .nav-link:hover .nav-link {
     color: var(--primary-background);
@@ -162,6 +168,8 @@
     opacity: 0;
     z-index: 2;
 }
+
+/* nav mobile menu */
 
 /* header NAV end */
 
@@ -491,6 +499,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 .price-section p {
     margin-top: 10px;
