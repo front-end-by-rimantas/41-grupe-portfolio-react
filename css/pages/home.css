@@ -741,12 +741,22 @@
 /* Stay Tuned end */
 
 /* footer start */
-section.container.footer {
-    padding: 100px 0 24px;
+.container.footer {
+    /* position: fixed;
+    bottom: 0; */
+    min-height: 400px;
     display: block;
-    height: 100%;
-    background-color: var(--primary-background);
-    z-index: 1;
+    padding: 100px 0 24px;
+    background-color: var(--primary-background) center no-repeat;
+    /* z-index: -1;
+    background-attachment: scroll;
+    background: var(--primary-background);
+    transform: translate3d(0, 0, 0);
+    position: relative; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .footer > .link-columns {
     padding-bottom: 60px;
@@ -762,11 +772,7 @@ section.container.footer {
 }
 
 .socials-column > p {
-    margin: 8px 0 16px;
-}
-
-.container.footer > .link-columns > .socials-column {
-    margin-right: 20px 0 0;
+    margin: 16px 0;
 }
 
 .social-links > a {
@@ -784,7 +790,52 @@ section.container.footer {
     text-align: center;
     padding-top: 8px;
 }
-
+/* ikoneliu animacija bet ne iki galo*/
+.social-links a:hover .fa {
+    animation: moveUp 0.3s ease-in-out;
+}
+@keyframes moveUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+/* .social-links a:hover .fa-facebook {
+    animation: moveUp 0.3s ease-in-out forwards;
+}
+@keyframes moveUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+} */
+/* cia ale sujungti du is centro i virsu ir is apacios i centra
+ .social-links a:hover .fa-facebook {
+    animation: moveUp 0.3s ease-in-out, moveUpBottom 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+@keyframes moveUpBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* ikoneliu animacija */
 .socials-column h3,
 .useful-column h3,
 .help-column h3,
@@ -809,7 +860,6 @@ section.container.footer {
     display: inline-block;
     margin-bottom: 10px;
 }
-
 .useful-column a,
 .help-column a {
     text-decoration: none;
@@ -830,14 +880,12 @@ section.container.footer {
     display: flex;
     justify-content: space-between;
 }
-
 .copyright > p > a {
     text-decoration: none;
 }
 .copyright > p > i {
     padding-top: 5px;
 }
-
 @media (min-width: 768px) {
     .copyright {
         justify-content: space-between;
