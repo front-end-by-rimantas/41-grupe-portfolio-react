@@ -11,6 +11,7 @@
 @import '../components/button.css';
 @import '../components/app-plan.css';
 @import '../components/featured-box.css';
+@import '../components/interface-gallery.css';
 /* footer.css */
 @import '../components/form.css';
 @import '../components/gallery.css';
@@ -451,6 +452,10 @@
 }
 .interface-section > .header-row .underline {
     margin: 15px auto;
+}
+.interface-section > .interface-row .review-btns {
+    clear: both;
+    justify-content: center;
 }
 /* Simple & Beautiful end */
 

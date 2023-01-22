@@ -1,0 +1,32 @@
+.interface-section > .interface-row .app-screenshot {
+    float: left;
+    overflow: hidden;
+}
+.interface-section > .interface-row img {
+    height: auto;
+    max-width: 15em;
+}
+
+/* @media (min-width: 400px) {
+    .app-screenshots > .app-screenshot > .show1 {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .app-screenshots > .app-screenshot > .show2 {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .app-screenshots > .app-screenshot > .show3 {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .app-screenshots > .app-screenshot > .show4 {
+        display: none;
+    }
+} */
