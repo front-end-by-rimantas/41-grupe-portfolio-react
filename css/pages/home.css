@@ -178,6 +178,7 @@
 .container.hero {
     padding-top: 0;
     min-height: 100vh;
+    position: relative;
     background-image: linear-gradient(
             -47deg,
             rgba(135, 49, 232, 0.92) 0%,
@@ -187,6 +188,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.layer-wave {
+    background-image: url(../../img/hero/wave3.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
 }
 
 .container > .row.hero {
@@ -216,6 +227,8 @@
 
 .container > .row.hero > .box-container {
     margin: 0 auto;
+    box-shadow: 0 20px 40px -15px #0003;
+    z-index: 1;
 }
 
 .box-container > .box-form {
@@ -293,6 +306,11 @@
     }
 }
 
+/* @media (min-width: 992px) {
+    .layer-wave {
+        height: 40%;
+    }
+} */
 /* hero end */
 
 /* Express Functionality start */

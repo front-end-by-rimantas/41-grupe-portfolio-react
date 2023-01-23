@@ -7,6 +7,8 @@ function hamburgerClick() {
         `<div class="close">
                         <icon href="#" class="fa fa-times"></icon>
                     </div>` + document.querySelector('.nav-bar-main').innerHTML;
+    // selected overlay div
+    const overlayDOM = document.querySelector('.mobile-nav');
     // Selected 'hamburger' button
     const hamburgerDOM = document.querySelector('.navbar-toggler');
     // Selected 'x' button
@@ -22,9 +24,11 @@ function hamburgerClick() {
         .forEach((a) => a.classList.add('hidden'));
     hamburgerDOM.addEventListener('click', () => {
         mobileDOM.classList.remove('hidden');
+        overlayDOM.classList.remove('hidden');
     });
     closeDOM.addEventListener('click', () => {
         mobileDOM.classList.add('hidden');
+        overlayDOM.classList.add('hidden');
     });
 
     for (let i = 0; i < menuDOM.length; i++) {
@@ -36,6 +40,20 @@ function hamburgerClick() {
             console.log(menuDOM[i].children);
             console.log(e.path); */
         });
+        const linksDOM = document.querySelectorAll('#mobile-nav a');
+        // console.log(linksDOM);
+        // console.log(linksDOM[0].href);
+        for (let i of linksDOM) {
+            i.addEventListener('click', (e) => {
+                if (i.href.endsWith('#')) {
+                    e.preventDefault();
+                    // console.log('default prevented');
+                } else {
+                    mobileDOM.classList.add('hidden');
+                    overlayDOM.classList.add('hidden');
+                }
+            });
+        }
     }
 
     // console.log(mobileDOM.innerHTML);
