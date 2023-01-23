@@ -10,17 +10,16 @@
     flex-direction: column;
     z-index: 2;
     overflow: scroll;
-    box-shadow: 0 0 20px black;
+    box-shadow: -2px 0 20px rgba(0, 0, 0, 0.1);
 }
-.navbar > #mobile-nav::after {
-    content: '';
+.navbar > .mobile-nav {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.95);
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -5;
+    z-index: 1;
 }
 
 #mobile-nav .close {
@@ -65,7 +64,8 @@
 }
 
 @media (min-width: 992px) {
-    #mobile-nav {
+    #mobile-nav,
+    .mobile-nav {
         display: none !important;
     }
 }
