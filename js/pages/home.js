@@ -1,8 +1,9 @@
 // IMPORT
-
+import { hamburgerClick } from '../components/mobile-menu/mobile-menu.js';
 // EXECUTION
 
 /* header NAV start */
+hamburgerClick();
 /* header NAV end */
 
 /* hero start */

@@ -34,7 +34,7 @@
     <section class="container hero">
         <!-- NAV -->
         <div class="row">
-            <div class="navbar col-12">
+            <div class="navbar col-12" id="home">
                 <a href="/"><img class="navbar-logo-img" src="./img/logo/logo-white.png" alt="Logo"></a>
                 <button class="navbar-toggler hidden-lg">
                     <input type="checkbox" />
@@ -45,14 +45,14 @@
                 <!-- NAV MAIN-->
                 <div class="nav-bar-main hidden visible-lg">
                     <div class="nav-item">
-                        <a class="nav-link" href="/#">Home<i class="fa fa-caret-down"></i></a>
+                        <a class="nav-link" href="#home">Home</a><i class="fa fa-caret-down"></i>
                         <div class="dropdown-item">
-                            <a class="dropdown-link" href="/">Homepage-1</a>
-                            <a class="dropdown-link" href="/">Homepage-2</a>
-                            <a class="dropdown-link" href="/">Homepage-3</a>
-                            <a class="dropdown-link" href="/">Homepage-4</a>
-                            <a class="dropdown-link" href="/">Homepage-5</a>
-                            <a class="dropdown-link" href="/">Homepage-6</a>
+                            <a class="dropdown-link" href="#">Homepage-1</a>
+                            <a class="dropdown-link" href="#">Homepage-2</a>
+                            <a class="dropdown-link" href="#">Homepage-3</a>
+                            <a class="dropdown-link" href="#">Homepage-4</a>
+                            <a class="dropdown-link" href="#">Homepage-5</a>
+                            <a class="dropdown-link" href="#">Homepage-6</a>
 
                         </div>
                     </div>
@@ -60,16 +60,16 @@
                         <a class="nav-link" href="#features">Features</a>
                     </div>
                     <div class="nav-item">
-                        <a class="nav-link" href="#pages">Pages<i class="fa fa-caret-down"></i></a>
+                        <a class="nav-link" href="#">Pages</a><i class="fa fa-caret-down"></i>
                         <div class="dropdown-item">
-                            <a class="dropdown-link" href="/">Inner Pages</a>
-                            <a class="dropdown-link" href="/">Blog Pages</a>
-                            <a class="dropdown-link" href="/">Blog Details</a>
-                            <a class="dropdown-link" href="/">Acounts</a>
-                            <a class="dropdown-link" href="/">Reviews</a>
-                            <a class="dropdown-link" href="/">FAQ</a>
-                            <a class="dropdown-link" href="/">Contact</a>
-                            <a class="dropdown-link" href="/">More Coming Soon</a>
+                            <a class="dropdown-link" href="#">Inner Pages</a>
+                            <a class="dropdown-link" href="#">Blog Pages</a>
+                            <a class="dropdown-link" href="#">Blog Details</a>
+                            <a class="dropdown-link" href="#">Acounts</a>
+                            <a class="dropdown-link" href="#reviews">Reviews</a>
+                            <a class="dropdown-link" href="#faq">FAQ</a>
+                            <a class="dropdown-link" href="#contact">Contact</a>
+                            <a class="dropdown-link" href="#">More Coming Soon</a>
                         </div>
                     </div>
                     <div class="nav-item">
@@ -82,6 +82,8 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
+                <div id="mobile-nav" class="hidden"></div>
+                <div class="mobile-nav hidden"></div>
             </div>
         </div>
         <!-- NAV -->
@@ -119,6 +121,8 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <div class="layer-wave">
         </div>
     </section>
     <!-- hero end -->
@@ -289,7 +293,7 @@
     <!-- Simple & Beautiful end -->
 
     <!-- Reviews start -->
-    <section class="container review">
+    <section class="container review" id="reviews">
         <div class="row">
             <div class="col-12 review-content">
                 <img class="customer-photo" src="./img/experts/avatar-1.png" alt="Customer photo">
@@ -357,7 +361,7 @@
     <!-- Full Power end -->
 
     <!-- FAQ start -->
-    <section class="container faq-section">
+    <section class="container faq-section" id="faq">
         <div class="row">
             <div class="secondary-title center">
                 <h2 class="section-title">Frequently asked questions</h2>
@@ -585,10 +589,18 @@
                 <a href="#" target="_blank"><img src="./img/logo/logo.png" alt="logo"></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
                 <div class="social-links">
-                    <a href="#" target="_blank" class="facebook fa fa-facebook"></a>
-                    <a href="#" target="_blank" class="twitter fa fa-twitter"></a>
-                    <a href="#" target="_blank" class="google fa fa-google-plus"></a>
-                    <a href="#" target="_blank" class="vine fa fa-vine"></a>
+                    <a href="#" target="_blank" class="facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" class="twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" class="google">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a href="#" target="_blank" class="vine">
+                        <i class="fa fa-vine"></i>
+                    </a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 useful-column">
@@ -630,6 +642,7 @@
     
     -->
     <!-- footer end -->
+    <script src="./js/pages/home.js" type="module" defer></script>
 </body>
 
 </html>
