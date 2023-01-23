@@ -443,6 +443,7 @@
 /* How sApp works end */
 
 /* Simple & Beautiful start */
+
 .interface-section > .header-row {
     display: flex;
     flex-direction: column;
@@ -453,10 +454,7 @@
 .interface-section > .header-row .underline {
     margin: 15px auto;
 }
-.interface-section > .interface-row .review-btns {
-    clear: both;
-    justify-content: center;
-}
+
 /* Simple & Beautiful end */
 
 /* Reviews start */
