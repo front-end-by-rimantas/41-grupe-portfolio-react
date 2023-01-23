@@ -47,18 +47,17 @@
 }
 
 .hover-layer > p,
-.hover-layer > .socials .icon {
+.hover-layer > .socials {
+    position: relative;
+    top: 32%;
     color: #fff;
     text-decoration: none;
     line-height: 1.6;
     font-weight: 600;
     text-align: center;
-    transform: scale(1);
-    transition: transform 0.3s;
 }
 
 .hover-layer > .expert-name {
-    margin-top: 60px;
     font-size: 18px;
 }
 
@@ -67,7 +66,16 @@
 }
 
 .hover-layer > .socials {
-    margin-left: 15px;
+    margin-top: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.hover-layer > .socials > a {
+    text-decoration: none;
+    color: #fff;
+    transform: scale(1);
+    transition: transform 0.3s;
 }
 
 .hover-layer > .socials > a:hover {
@@ -96,8 +104,5 @@
 @media (min-width: 992px) {
     .experts-gallery > .content {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .experts-gallery > .content > .card {
-        width: 100%;
     }
 }
