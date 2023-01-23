@@ -228,6 +228,7 @@
 .container > .row.hero > .box-container {
     margin: 0 auto;
     box-shadow: 0 20px 40px -15px #0003;
+    z-index: 1;
 }
 
 .box-container > .box-form {
