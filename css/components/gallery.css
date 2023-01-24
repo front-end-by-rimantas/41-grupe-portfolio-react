@@ -32,7 +32,6 @@
 }
 
 .experts-gallery .visual > .hover-layer {
-    /*display: none;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -44,20 +43,13 @@
     transition: all 0.5s;
 }
 .experts-gallery .card:hover .hover-layer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     transform: scale(1);
 }
 
-.card:hover .hover-layer > .socials {
-    flex-direction: row;
-}
-
 .hover-layer > p,
-.hover-layer > .socials .icon {
+.hover-layer > .socials {
+    position: relative;
+    top: 32%;
     color: #fff;
     text-decoration: none;
     line-height: 1.6;
@@ -74,17 +66,20 @@
 }
 
 .hover-layer > .socials {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    width: 45%;
-    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.hover-layer > .socials > a {
+    text-decoration: none;
+    color: #fff;
     transform: scale(1);
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 
 .hover-layer > .socials > a:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 @media (min-width: 576px) {
@@ -109,8 +104,5 @@
 @media (min-width: 992px) {
     .experts-gallery > .content {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .experts-gallery > .content > .card {
-        width: 100%;
     }
 }
