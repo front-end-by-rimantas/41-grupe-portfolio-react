@@ -1,0 +1,12 @@
+.interface-section > .interface-row .app-screenshots {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.interface-section > .interface-row .img {
+    max-width: 15em;
+}
+.interface-section > .interface-row .review-btns {
+    clear: both;
+    justify-content: center;
+}

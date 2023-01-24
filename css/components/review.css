@@ -39,14 +39,17 @@ h5 {
     gap: 0.5em;
 }
 
-.review .review-btns > .checked {
+.review .review-btns > .checked,
+.interface-section .review-btns .checked {
     background-color: var(--main-color);
     box-shadow: 0px 0px 8px var(--main-color);
 }
 
 .btn-1,
 .btn-2,
-.btn-3 {
+.btn-3,
+.btn-4,
+.btn-5 {
     background-color: #e5e4e5;
     height: 10px;
     width: 10px;
