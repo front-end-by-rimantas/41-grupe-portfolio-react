@@ -1,6 +1,7 @@
 // IMPORT
 import { hamburgerClick } from '../components/mobile-menu/mobile-menu.js';
 import { tiles } from '../components/express-functionality/express.js';
+import { expressData } from '../data/expressData.js';
 
 // EXECUTION
 
@@ -12,7 +13,7 @@ hamburgerClick();
 /* hero end */
 
 /* Express Functionality start */
-tiles();
+tiles(expressData);
 /* Express Functionality end */
 
 /* Easily communicate start */
