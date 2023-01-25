@@ -1,9 +1,11 @@
 // IMPORT
 import { hamburgerClick } from '../components/mobile-menu/mobile-menu.js';
+import { navSticky } from '../components/navbar-sticky.js';
 // EXECUTION
 
 /* header NAV start */
 hamburgerClick();
+navSticky();
 /* header NAV end */
 
 /* hero start */
