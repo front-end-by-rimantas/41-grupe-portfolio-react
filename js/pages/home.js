@@ -1,5 +1,7 @@
 // IMPORT
 import { hamburgerClick } from '../components/mobile-menu/mobile-menu.js';
+import { tiles } from '../components/express-functionality/express.js';
+
 // EXECUTION
 
 /* header NAV start */
@@ -10,6 +12,7 @@ hamburgerClick();
 /* hero end */
 
 /* Express Functionality start */
+tiles();
 /* Express Functionality end */
 
 /* Easily communicate start */
