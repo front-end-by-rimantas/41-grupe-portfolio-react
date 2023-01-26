@@ -48,6 +48,7 @@
     padding-top: 80px;
 }
 .sticky {
+    overflow: hidden;
     position: fixed;
     top: 0px;
     box-shadow: rgb(0, 0, 0 /10%) 0px 0px 20px;
