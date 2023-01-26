@@ -44,15 +44,14 @@
     position: relative;
     padding: 20px 0;
 }
+.navbarOffsetMargin {
+    padding-top: 80px;
+}
 .sticky {
     position: fixed;
-    top: 0;
-}
-/* #navbar {
-    top: 0;
-    position: fixed;
+    top: 0px;
     box-shadow: rgb(0, 0, 0 /10%) 0px 0px 20px;
-} */
+}
 .navbar > .nav-bar-main a {
     margin: 0 22px;
     cursor: pointer;
