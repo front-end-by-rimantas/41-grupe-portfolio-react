@@ -306,12 +306,6 @@
         margin-top: 5em;
     }
 }
-
-/* @media (min-width: 992px) {
-    .layer-wave {
-        height: 40%;
-    }
-} */
 /* hero end */
 
 /* Express Functionality start */
@@ -326,7 +320,7 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 0.3rem;
-    padding: 0.75rem 10.25rem 0.5rem 1.5rem;
+    padding: 0.75rem 11rem 0.5rem 1.5rem;
     border-radius: 1.5rem 1.5rem;
     box-shadow: 1px 5px 5px #0003;
     align-items: center;
@@ -334,7 +328,6 @@
 
 .inactive-btn i {
     color: var(--main-color);
-    margin: 0 4px 0 0;
     font-weight: 500;
 }
 .inactive-btn .bword-1 {
@@ -785,24 +778,21 @@
 
 /* footer start */
 .container.footer {
-    /* position: fixed;
-    bottom: 0; */
-    min-height: 400px;
-    display: block;
-    padding: 100px 0 24px;
-    background-color: var(--primary-background) center no-repeat;
-    /* z-index: -1;
-    background-attachment: scroll;
-    background: var(--primary-background);
-    transform: translate3d(0, 0, 0);
-    position: relative; */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 60px 15px 24px;
+    background-color: var(--primary-background);
 }
+
+@media (min-width: 992px) {
+    .container.footer {
+        position: sticky;
+        bottom: 0;
+        height: auto;
+        z-index: -1;
+    }
+}
+
 .footer > .link-columns {
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 .useful-column > ul > li,
 .help-column > ul > li {
@@ -845,39 +835,6 @@
         transform: translateY(-100%);
     }
 }
-/* .social-links a:hover .fa-facebook {
-    animation: moveUp 0.3s ease-in-out forwards;
-}
-@keyframes moveUp {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-} */
-/* cia ale sujungti du is centro i virsu ir is apacios i centra
- .social-links a:hover .fa-facebook {
-    animation: moveUp 0.3s ease-in-out, moveUpBottom 0.3s ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
-@keyframes moveUp {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-}
-@keyframes moveUpBottom {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 /* ikoneliu animacija */
 .socials-column h3,
 .useful-column h3,
@@ -917,7 +874,7 @@
     content: '';
     display: block;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    margin: 10px;
 }
 .copyright {
     display: flex;
