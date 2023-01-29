@@ -1,82 +1,37 @@
 const navbar = document.querySelector('#home');
-// const hero = document.querySelector('#hero');
-const sectionOne = document.querySelector('#features');
+// const body = document.body;
 
-const sectionOneOptions = {
-    rootMargin: '0px 0px 0px 0px',
-};
-
-const sectionOneObserver = new IntersectionObserver(function (
-    entries,
-    sectionOneObserver
-) {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+function observer() {
+    window.addEventListener('scroll', () => {
+        const scroll = window.scrollY;
+        if (scroll >= 800) {
             navbar.classList.add('sticky');
         } else {
             navbar.classList.remove('sticky');
         }
     });
-},
-sectionOneOptions);
+}
+export { observer };
 
-sectionOneObserver.observe(sectionOne);
-
-// const body = document.getElementById('home');
-// let lastScroll = navbar.offsetTop;
-
-//     function navSticky() {
-//         window.addEventListener('scroll', () => {
-//         const currentScroll = window.pageYOffset;
-//         console.log(currentScroll);
-//         if (currentScroll <= 0) {
-//             body.classList.remove('sticky');
-//         }
-//         if (currentScroll <= 0) {
-//             body.classList.add('sticky');
-//         }
-
-//         lastScroll = currentScroll;
-// });
-
-// window.onscroll = function () {
-//     navSticky();
+// const navbar = document.querySelector('#home');
+// //const sectionOne = document.querySelector('#features');
+// const sections = document.querySelectorAll('section');
+// const options = {
+//     rootMargin: '0px 0px 0px 0px',
+//     threshold: 0.9,
 // };
 
-// let navbar = document.getElementById('home');
-// let sticky = navbar.offsetTop;
-
-// function navSticky() {
-//     if (window.pageYOffset >= sticky) {
-//         navbar.classList.add('sticky');
-//     } else {
-//         navbar.classList.remove('sticky');
-//     }
-// }
-// let navbar = document.querySelector('#home');
-// let featuresSection = document.getElementById('features');
-// let navPos = navbar.getBoundingClientRect().top;
-
-// function navSticky() {
-//   window.addEventListener('scroll', e => {
-//       let scrollPos = window.scrollY;
-//         if (scrollPos > navPos) {
+// const observer = new IntersectionObserver(function (entries, observer) {
+//     entries.forEach((entry) => {
+//         console.log(entry.target);
+//         if (entry.isIntersecting) {
 //             navbar.classList.add('sticky');
-//             features.classList.add('navbarOffsetMargin');
 //         } else {
 //             navbar.classList.remove('sticky');
-//             features.classList.add('navbarOffsetMargin');
 //         }
-//     }
+//     });
+// }, options);
+
+// sections.forEach(function (section) {
+//     observer.observe(section);
 // });
-// const navbar = document.querySelector('#home');
-// let top = navbar.offsetTop;
-// function navSticky() {
-//     if (window.scrollY >= top) {
-//         navbar.classList.add('sticky');
-//     } else {
-//         navbar.classList.remove('sticky');
-//     }
-// }
-// window.addEventListener('scroll', navSticky);
-export { sectionOneObserver };
