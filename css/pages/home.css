@@ -31,31 +31,45 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    position: relative;
 }
-.navbar > .nav-bar-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.navbar > .nav-bar-logo > a {
-    cursor: pointer;
+#logo-on-sticky {
+    position: absolute;
+    left: 40px;
+    top: 15px;
 }
 .navbar > .nav-bar-main {
     position: relative;
     padding: 20px 0;
 }
+.navbar > .nav-bar-main > .nav-item {
+    color: var(--secondary-background);
+}
+.navbar > .nav-bar-main a:hover,
+.navbar > .nav-bar-main > .nav-item:hover {
+    color: #d3d3d3;
+}
+.navbar > .nav-bar-main .fa-caret-down {
+    font-size: 16px;
+    transform: translateX(-100%);
+}
+.hero > .row > .sticky {
+    width: 100%;
+    position: fixed;
+    padding: 0px 15px;
+    margin: 0px 0px;
+    left: 0;
+    top: 0;
+    color: --font-color-secondary;
+    transition: 0.5s;
+    z-index: 999;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
 .navbar > .nav-bar-main a {
-    margin: 0 22px;
     cursor: pointer;
-    color: var(--primary-background);
     text-decoration: none;
-    justify-content: center;
-    align-items: center;
     list-style: none;
     font-size: 14px;
-}
-.navbar > .nav-bar-main a:hover {
-    color: #d3d3d3;
 }
 .navbar > .nav-bar-main > .nav-item {
     float: left;
@@ -89,6 +103,7 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid var(--primary-background);
+    z-index: 99;
 }
 .nav-item .dropdown-item .dropdown-link {
     float: none;
@@ -110,22 +125,19 @@
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: var(--primary-background);
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
 }
-.navbar > .nav-bar-main .fa-caret-down {
-    color: white;
-    font-size: 16px;
-    transform: translateX(-100%);
+.navbar > .nav-bar-main .link-sticky,
+.nav-bar-main > .nav-item .link-sticky {
+    color: var(--font-color-fith);
 }
-.navbar a:hover,
-.nav-link:hover .nav-link {
-    color: var(--primary-background);
+.navbar > .nav-bar-main .link-sticky:hover {
+    color: var(--font-color-main);
 }
-
 .nav-link a {
     float: none;
     color: black;
@@ -134,7 +146,6 @@
     display: block;
     text-align: left;
 }
-
 .nav-item:hover .dropdown-item {
     display: block;
 }
@@ -160,6 +171,12 @@
     background: var(--primary-background);
     z-index: 1;
 }
+.navbar-toggler .toggler-sticky {
+    background: var(--font-color-fith);
+    margin-bottom: 5px;
+    margin-right: 40px;
+}
+
 .navbar-toggler > input {
     display: block;
     width: 33px;

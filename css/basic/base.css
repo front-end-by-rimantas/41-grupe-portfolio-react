@@ -33,6 +33,7 @@ body {
 .faq-section,
 .interface-section,
 .subscribe,
+.sticky,
 footer {
     background-color: var(--primary-background);
 }
