@@ -4,12 +4,6 @@
     position: relative;
 }
 
-.counter-section .counter-item > .counter-title {
-    background: linear-gradient(#8731e8, #4528dc);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
 .counter-section > .row > .counter-item {
     display: flex;
     flex-direction: column;
@@ -19,13 +13,17 @@
 }
 
 .counter-section .counter-item .counter-title {
-    font-size: 30px;
+    background: linear-gradient(#8731e8, #4528dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.5em;
     text-transform: uppercase;
 }
 
 .counter-section .counter-item > .counter-description {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
 }
