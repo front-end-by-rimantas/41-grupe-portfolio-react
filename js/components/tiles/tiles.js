@@ -1,5 +1,13 @@
-function tiles(data) {
-    const expressDOM = document.getElementById('feature-boxes');
+function tiles(selector, data) {
+    if (typeof selector !== 'string') {
+        throw new Error('Selector must be string');
+    }
+
+    const expressDOM = document.getElementById(selector);
+
+    if (expressDOM === null) {
+        throw new Error('No element was found with indicated selector.');
+    }
 
     let HTML = '';
     for (let i = 0; i < data.length; i++) {

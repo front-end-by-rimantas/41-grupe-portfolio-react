@@ -1,6 +1,6 @@
 // IMPORT
 import { hamburgerClick } from '../components/mobile-menu/mobile-menu.js';
-import { tiles } from '../components/express-functionality/express.js';
+import { tiles } from '../components/tiles/tiles.js';
 import { expressData } from '../data/expressData.js';
 
 // EXECUTION
@@ -13,7 +13,7 @@ hamburgerClick();
 /* hero end */
 
 /* Express Functionality start */
-tiles(expressData);
+tiles('feature-boxes', expressData);
 /* Express Functionality end */
 
 /* Easily communicate start */
