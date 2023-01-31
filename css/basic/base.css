@@ -31,6 +31,9 @@ body {
 .review,
 .team,
 .faq-section,
+.interface-section,
+.subscribe,
+.sticky,
 .counter-section,
 footer {
     background-color: var(--primary-background);
