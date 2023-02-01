@@ -1,6 +1,9 @@
 // IMPORT
 import { hamburgerClick } from '../components/mobile-menu/mobile-menu.js';
+import { tiles } from '../components/tiles/tiles.js';
+import { expressData } from '../data/expressData.js';
 import { observer } from '../components/navbar-sticky.js';
+
 // EXECUTION
 
 /* header NAV start */
@@ -12,6 +15,7 @@ observer();
 /* hero end */
 
 /* Express Functionality start */
+tiles('feature-boxes', expressData);
 /* Express Functionality end */
 
 /* Easily communicate start */
