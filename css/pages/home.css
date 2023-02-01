@@ -10,6 +10,7 @@
 /* components (by alphabet):  */
 @import '../components/button.css';
 @import '../components/app-plan.css';
+@import '../components/counter.css';
 @import '../components/featured-box.css';
 @import '../components/interface-gallery.css';
 @import '../components/mobile-menu.css';

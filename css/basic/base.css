@@ -34,6 +34,7 @@ body {
 .interface-section,
 .subscribe,
 .sticky,
+.counter-section,
 footer {
     background-color: var(--primary-background);
 }
